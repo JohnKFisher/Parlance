@@ -23,7 +23,7 @@
 		FEC65FB31794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
 		FEC65FB41794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
 		FEC65FBC1794E0BB0072E836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */; };
-		FEC65FBE1794E0BB0072E836 /* WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FBD1794E0BB0072E836 /* WordsTests.m */; };
+		FEC65FBE1794E0BB0072E836 /* ParlanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */; };
 		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		FEC65FB11794E0BB0072E836 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FEC65FB91794E0BB0072E836 /* ParlanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParlanceTests-Info.plist"; sourceTree = "<group>"; };
 		FEC65FBB1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FEC65FBD1794E0BB0072E836 /* WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsTests.m; sourceTree = "<group>"; };
+		FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceTests.m; sourceTree = "<group>"; };
 		FEC65FC71794E3600072E836 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FEC65FC91794E3A90072E836 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		FEC65FB71794E0BB0072E836 /* ParlanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				FEC65FBD1794E0BB0072E836 /* WordsTests.m */,
+				FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */,
 				FEC65FB81794E0BB0072E836 /* Supporting Files */,
 			);
 			name = ParlanceTests;
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC65FBE1794E0BB0072E836 /* WordsTests.m in Sources */,
+				FEC65FBE1794E0BB0072E836 /* ParlanceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
