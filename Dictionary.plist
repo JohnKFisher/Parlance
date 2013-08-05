@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Builtin</key>
+        <array>
+            <dict>
+                <key>Word</key>
+                <string>Cat</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Feline Animal</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Shiny</string>
+                <key>Speech</key>
+                <string>adj.</string>
+                <key>Definition</key>
+                <string>Reflective</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Amy</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Sexy girl I date</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Happily</string>
+                <key>Speech</key>
+                <string>adv.</string>
+                <key>Definition</key>
+                <string>With joy</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Monkey</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Primate</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Thor</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Loach</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Batman</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Bruce Wayne</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Superman</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Clark Kent</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Green Arrow</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Oliver Queen</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Green Lantern</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Kyle Rayner</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>The Doctor</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Betta Fish</string>
+            </dict>
+            <dict>
+                <key>Word</key>
+                <string>Wing-Wang</string>
+                <key>Speech</key>
+                <string>n.</string>
+                <key>Definition</key>
+                <string>Penis</string>
+            </dict>
+            
+		</array>
+    </dict>
+</plist>

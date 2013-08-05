@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45911AEBD8894065AA9AEEC5 /* libPods.a */; };
+		FE97B43617B0405B00447095 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65FC91794E3A90072E836 /* GameKit.framework */; };
+		FE97B43717B0405C00447095 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65FC71794E3600072E836 /* StoreKit.framework */; };
+		FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
+		FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F941794E0BB0072E836 /* CoreGraphics.framework */; };
+		FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
+		FEC65F9D1794E0BB0072E836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEC65F9B1794E0BB0072E836 /* InfoPlist.strings */; };
+		FEC65F9F1794E0BB0072E836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65F9E1794E0BB0072E836 /* main.m */; };
+		FEC65FA31794E0BB0072E836 /* ParlanceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */; };
+		FEC65FA61794E0BB0072E836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC65FA41794E0BB0072E836 /* Main.storyboard */; };
+		FEC65FA91794E0BB0072E836 /* ParlanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */; };
+		FEC65FAB1794E0BB0072E836 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC65FAA1794E0BB0072E836 /* Images.xcassets */; };
+		FEC65FB21794E0BB0072E836 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65FB11794E0BB0072E836 /* XCTest.framework */; };
+		FEC65FB31794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
+		FEC65FB41794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
+		FEC65FBC1794E0BB0072E836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */; };
+		FEC65FBE1794E0BB0072E836 /* WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FBD1794E0BB0072E836 /* WordsTests.m */; };
+		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEC65FB51794E0BB0072E836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC65F871794E0BB0072E836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC65F8E1794E0BB0072E836;
+			remoteInfo = Words;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		45911AEBD8894065AA9AEEC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE152A30179C553B0067CBEA /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../MenuViewController.h; sourceTree = "<group>"; };
+		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
+		FEC65F8F1794E0BB0072E836 /* Parlance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parlance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC65F921794E0BB0072E836 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEC65F941794E0BB0072E836 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEC65F961794E0BB0072E836 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEC65F9A1794E0BB0072E836 /* Parlance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Parlance-Info.plist"; sourceTree = "<group>"; };
+		FEC65F9C1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEC65F9E1794E0BB0072E836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEC65FA01794E0BB0072E836 /* Parlance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parlance-Prefix.pch"; sourceTree = "<group>"; };
+		FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParlanceAppDelegate.h; sourceTree = "<group>"; };
+		FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceAppDelegate.m; sourceTree = "<group>"; };
+		FEC65FA51794E0BB0072E836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParlanceViewController.h; sourceTree = "<group>"; };
+		FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceViewController.m; sourceTree = "<group>"; };
+		FEC65FAA1794E0BB0072E836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEC65FB01794E0BB0072E836 /* ParlanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParlanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC65FB11794E0BB0072E836 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FEC65FB91794E0BB0072E836 /* ParlanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParlanceTests-Info.plist"; sourceTree = "<group>"; };
+		FEC65FBB1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEC65FBD1794E0BB0072E836 /* WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsTests.m; sourceTree = "<group>"; };
+		FEC65FC71794E3600072E836 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FEC65FC91794E3A90072E836 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEC65F8C1794E0BB0072E836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */,
+				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
+				FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */,
+				FE97B43717B0405C00447095 /* StoreKit.framework in Frameworks */,
+				FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */,
+				FE97B43617B0405B00447095 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC65FAD1794E0BB0072E836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC65FB21794E0BB0072E836 /* XCTest.framework in Frameworks */,
+				FEC65FB41794E0BB0072E836 /* UIKit.framework in Frameworks */,
+				FEC65FB31794E0BB0072E836 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEC65F861794E0BB0072E836 = {
+			isa = PBXGroup;
+			children = (
+				FEF0B88817976D6100D29212 /* Resources */,
+				FEC65F981794E0BB0072E836 /* Parlance */,
+				FEC65FB71794E0BB0072E836 /* ParlanceTests */,
+				FEC65F911794E0BB0072E836 /* Frameworks */,
+				FEC65F901794E0BB0072E836 /* Products */,
+				18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FEC65F901794E0BB0072E836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEC65F8F1794E0BB0072E836 /* Parlance.app */,
+				FEC65FB01794E0BB0072E836 /* ParlanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC65F911794E0BB0072E836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEC65FC91794E3A90072E836 /* GameKit.framework */,
+				FEC65FC71794E3600072E836 /* StoreKit.framework */,
+				FEC65F921794E0BB0072E836 /* Foundation.framework */,
+				FEC65F941794E0BB0072E836 /* CoreGraphics.framework */,
+				FEC65F961794E0BB0072E836 /* UIKit.framework */,
+				FEC65FB11794E0BB0072E836 /* XCTest.framework */,
+				45911AEBD8894065AA9AEEC5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC65F981794E0BB0072E836 /* Parlance */ = {
+			isa = PBXGroup;
+			children = (
+				FE152A30179C553B0067CBEA /* MenuViewController.h */,
+				FE152A31179C553B0067CBEA /* MenuViewController.m */,
+				FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */,
+				FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */,
+				FEC65FA41794E0BB0072E836 /* Main.storyboard */,
+				FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */,
+				FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */,
+				FEC65FAA1794E0BB0072E836 /* Images.xcassets */,
+				FEC65F991794E0BB0072E836 /* Supporting Files */,
+			);
+			name = Parlance;
+			path = Words;
+			sourceTree = "<group>";
+		};
+		FEC65F991794E0BB0072E836 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEC65F9A1794E0BB0072E836 /* Parlance-Info.plist */,
+				FEC65F9B1794E0BB0072E836 /* InfoPlist.strings */,
+				FEC65F9E1794E0BB0072E836 /* main.m */,
+				FEC65FA01794E0BB0072E836 /* Parlance-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEC65FB71794E0BB0072E836 /* ParlanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC65FBD1794E0BB0072E836 /* WordsTests.m */,
+				FEC65FB81794E0BB0072E836 /* Supporting Files */,
+			);
+			name = ParlanceTests;
+			path = WordsTests;
+			sourceTree = "<group>";
+		};
+		FEC65FB81794E0BB0072E836 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEC65FB91794E0BB0072E836 /* ParlanceTests-Info.plist */,
+				FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF0B88817976D6100D29212 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0B88B1798BB3400D29212 /* Dictionary.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEC65F8E1794E0BB0072E836 /* Parlance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC65FC11794E0BB0072E836 /* Build configuration list for PBXNativeTarget "Parlance" */;
+			buildPhases = (
+				FB02FBB3F361420AAD53E5B2 /* Check Pods Manifest.lock */,
+				FEC65F8B1794E0BB0072E836 /* Sources */,
+				FEC65F8C1794E0BB0072E836 /* Frameworks */,
+				FEC65F8D1794E0BB0072E836 /* Resources */,
+				5F5B1D877E2046388B8C7915 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parlance;
+			productName = Words;
+			productReference = FEC65F8F1794E0BB0072E836 /* Parlance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEC65FAF1794E0BB0072E836 /* ParlanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC65FC41794E0BB0072E836 /* Build configuration list for PBXNativeTarget "ParlanceTests" */;
+			buildPhases = (
+				FEC65FAC1794E0BB0072E836 /* Sources */,
+				FEC65FAD1794E0BB0072E836 /* Frameworks */,
+				FEC65FAE1794E0BB0072E836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC65FB61794E0BB0072E836 /* PBXTargetDependency */,
+			);
+			name = ParlanceTests;
+			productName = WordsTests;
+			productReference = FEC65FB01794E0BB0072E836 /* ParlanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEC65F871794E0BB0072E836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Words;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "John Kenneth Fisher";
+				TargetAttributes = {
+					FEC65F8E1794E0BB0072E836 = {
+						DevelopmentTeam = 5Y9T5WZ4J3;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					FEC65FAF1794E0BB0072E836 = {
+						TestTargetID = FEC65F8E1794E0BB0072E836;
+					};
+				};
+			};
+			buildConfigurationList = FEC65F8A1794E0BB0072E836 /* Build configuration list for PBXProject "Parlance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEC65F861794E0BB0072E836;
+			productRefGroup = FEC65F901794E0BB0072E836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEC65F8E1794E0BB0072E836 /* Parlance */,
+				FEC65FAF1794E0BB0072E836 /* ParlanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEC65F8D1794E0BB0072E836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */,
+				FEC65FAB1794E0BB0072E836 /* Images.xcassets in Resources */,
+				FEC65F9D1794E0BB0072E836 /* InfoPlist.strings in Resources */,
+				FEC65FA61794E0BB0072E836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC65FAE1794E0BB0072E836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC65FBC1794E0BB0072E836 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F5B1D877E2046388B8C7915 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB02FBB3F361420AAD53E5B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEC65F8B1794E0BB0072E836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC65FA31794E0BB0072E836 /* ParlanceAppDelegate.m in Sources */,
+				FEC65F9F1794E0BB0072E836 /* main.m in Sources */,
+				FEC65FA91794E0BB0072E836 /* ParlanceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC65FAC1794E0BB0072E836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC65FBE1794E0BB0072E836 /* WordsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEC65FB61794E0BB0072E836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC65F8E1794E0BB0072E836 /* Parlance */;
+			targetProxy = FEC65FB51794E0BB0072E836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEC65F9B1794E0BB0072E836 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC65F9C1794E0BB0072E836 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEC65FA41794E0BB0072E836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC65FA51794E0BB0072E836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC65FBB1794E0BB0072E836 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEC65FBF1794E0BB0072E836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEC65FC01794E0BB0072E836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEC65FC21794E0BB0072E836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Words/Parlance-Prefix.pch";
+				INFOPLIST_FILE = "Words/Parlance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Parlance;
+				PROVISIONING_PROFILE = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEC65FC31794E0BB0072E836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Words/Parlance-Prefix.pch";
+				INFOPLIST_FILE = "Words/Parlance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = Parlance;
+				PROVISIONING_PROFILE = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FEC65FC51794E0BB0072E836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Words.app/Words";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Words/Words-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WordsTests/ParlanceTests-Info.plist";
+				PRODUCT_NAME = ParlanceTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FEC65FC61794E0BB0072E836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Words.app/Words";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Words/Words-Prefix.pch";
+				INFOPLIST_FILE = "WordsTests/ParlanceTests-Info.plist";
+				PRODUCT_NAME = ParlanceTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEC65F8A1794E0BB0072E836 /* Build configuration list for PBXProject "Parlance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC65FBF1794E0BB0072E836 /* Debug */,
+				FEC65FC01794E0BB0072E836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC65FC11794E0BB0072E836 /* Build configuration list for PBXNativeTarget "Parlance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC65FC21794E0BB0072E836 /* Debug */,
+				FEC65FC31794E0BB0072E836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC65FC41794E0BB0072E836 /* Build configuration list for PBXNativeTarget "ParlanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC65FC51794E0BB0072E836 /* Debug */,
+				FEC65FC61794E0BB0072E836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEC65F871794E0BB0072E836 /* Project object */;
+}
