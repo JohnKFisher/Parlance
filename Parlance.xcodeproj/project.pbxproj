@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45911AEBD8894065AA9AEEC5 /* libPods.a */; };
-		FE97B43617B0405B00447095 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65FC91794E3A90072E836 /* GameKit.framework */; };
-		FE97B43717B0405C00447095 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65FC71794E3600072E836 /* StoreKit.framework */; };
 		FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
 		FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F941794E0BB0072E836 /* CoreGraphics.framework */; };
 		FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
@@ -61,8 +59,6 @@
 		FEC65FB91794E0BB0072E836 /* ParlanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParlanceTests-Info.plist"; sourceTree = "<group>"; };
 		FEC65FBB1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceTests.m; sourceTree = "<group>"; };
-		FEC65FC71794E3600072E836 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		FEC65FC91794E3A90072E836 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,9 +70,7 @@
 				FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */,
 				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
 				FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */,
-				FE97B43717B0405C00447095 /* StoreKit.framework in Frameworks */,
 				FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */,
-				FE97B43617B0405B00447095 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +111,6 @@
 		FEC65F911794E0BB0072E836 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FEC65FC91794E3A90072E836 /* GameKit.framework */,
-				FEC65FC71794E3600072E836 /* StoreKit.framework */,
 				FEC65F921794E0BB0072E836 /* Foundation.framework */,
 				FEC65F941794E0BB0072E836 /* CoreGraphics.framework */,
 				FEC65F961794E0BB0072E836 /* UIKit.framework */,
@@ -237,10 +229,10 @@
 						DevelopmentTeam = 5Y9T5WZ4J3;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
