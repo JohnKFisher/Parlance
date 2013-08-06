@@ -91,10 +91,6 @@ UIAlertView *alertView;
     answerBottom.backgroundColor = [UIColor whiteColor];
 
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        // switch to a background thread and perform your expensive operation
-        
-        
         
         
         //Creates correct question and answer, and two incorrect answers.
@@ -131,7 +127,6 @@ UIAlertView *alertView;
             // switch back to the main thread to update your UI
             
         });
-    });
 
     
     
