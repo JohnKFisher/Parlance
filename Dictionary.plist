@@ -1,106 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>Builtin</key>
-        <array>
-            <dict>
-                <key>Word</key>
-                <string>Cat</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Feline Animal</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Shiny</string>
-                <key>Speech</key>
-                <string>adj.</string>
-                <key>Definition</key>
-                <string>Reflective</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Amy</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Sexy girl I date</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Happily</string>
-                <key>Speech</key>
-                <string>adv.</string>
-                <key>Definition</key>
-                <string>With joy</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Monkey</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Primate</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Thor</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Loach</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Batman</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Bruce Wayne</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Superman</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Clark Kent</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Green Arrow</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Oliver Queen</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Green Lantern</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Kyle Rayner</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>The Doctor</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Betta Fish</string>
-            </dict>
-            <dict>
-                <key>Word</key>
-                <string>Wing-Wang</string>
-                <key>Speech</key>
-                <string>n.</string>
-                <key>Definition</key>
-                <string>Penis</string>
-            </dict>
-            
-		</array>
-    </dict>
+<dict>
+	<key>Builtin</key>
+	<array>
+		<dict>
+			<key>Word</key>
+			<string>Cat</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Feline Animal</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Shiny</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Reflective</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Amy Hensal</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Sexy girlfriend</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Happily</string>
+			<key>Speech</key>
+			<string>adv.</string>
+			<key>Definition</key>
+			<string>With joy</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Monkey</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Primate</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Thor</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Pet Loach</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Batman</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Bruce Wayne</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Superman</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Clark Kent</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Green Arrow</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Oliver Queen</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Green Lantern</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Kyle Rayner</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>The Doctor</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Pet Betta Fish</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>James Bond</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Super Spy</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Spider-Man</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Peter Parker</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Ben Matlock</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Attorney</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Gojira</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Giant Lizard</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>The Flash</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Wally West</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>James T. Kirk</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Original Star Trek</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Jean-Luc Picard</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Star Trek TNG</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Ben Sisko</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Star Trek DS9</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Kathryn Janeway</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Star Trek VOY</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Jonathan Archer</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Star Trek ENT</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Nightwing</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Dick Grayson</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Batgirl</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Barbara Gordon</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Tricorder</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Scanning Device</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Wilma Flintstone</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Fred&apos;s Wife</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Neil Armstrong</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Astronaut</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Charles Darwin</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Scientist</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Ben Franklin</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Founding Father</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Great White Shark</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Toothy giant fish</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Wonder Woman</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Diana Prince</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Gizmoduck</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Fenton Crackshell</string>
+		</dict>
+	</array>
+</dict>
 </plist>

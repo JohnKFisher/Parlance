@@ -1,6 +1,6 @@
 //
-//  WordsViewController.m
-//  Words
+//  ParlanceViewController.m
+//  Parlance
 //
 //  Created by John Kenneth Fisher on 7/15/13.
 //  Copyright (c) 2013 John Kenneth Fisher. All rights reserved.
@@ -20,6 +20,8 @@ NSString *plistPath;
 NSMutableDictionary *dictArray;
 NSMutableArray *availableWords;
 
+NSString *totalRoundsString;
+
 NSInteger randomIndexCorrect;
 NSInteger randomIndexIncorrect1;
 NSInteger randomIndexIncorrect2;
@@ -38,7 +40,6 @@ NSInteger answerLocation;
 
 UIAlertView *alertView;
 
-
 @synthesize wordLabel;
 @synthesize answerTop;
 @synthesize answerMiddle;
@@ -49,7 +50,11 @@ UIAlertView *alertView;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
     
     [self prepRound];
     
@@ -79,6 +84,7 @@ UIAlertView *alertView;
 
 
 
+
 -(void)startWordRound
 
 {
@@ -89,9 +95,18 @@ UIAlertView *alertView;
     answerTop.backgroundColor = [UIColor whiteColor];
     answerMiddle.backgroundColor = [UIColor whiteColor];
     answerBottom.backgroundColor = [UIColor whiteColor];
+    
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSInteger totalRounds = [prefs integerForKey:@"totalRounds"];
+    
+    NSString *totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
+
+    self.roundsLabel.text = totalRoundsString;
+
 
     
-        
+    
         
         //Creates correct question and answer, and two incorrect answers.
         //Do-Whiles make sure answers don't duplicate.
@@ -120,14 +135,6 @@ UIAlertView *alertView;
         wordStr = [questionCorrect objectForKey:@"Word"];
         answerLocation = arc4random() % 3;
         
-        
-        
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // switch back to the main thread to update your UI
-            
-        });
-
     
     
     

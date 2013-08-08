@@ -11,7 +11,7 @@ PODS:
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
   - KLSwitch (1.5)
-  - UI7Kit (0.7.4):
+  - UI7Kit (0.7.6):
     - FoundationExtension (~> 0.38)
     - KLSwitch (~> 1.5)
 
@@ -22,6 +22,6 @@ SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
   FoundationExtension: c1b0732650dbe50e4ab4754b34050b7d44952f50
   KLSwitch: 27e07101397ce250acbf6c3a65349cdf69f4bcec
-  UI7Kit: cc85eb942f45152fd645fa4094c7cd9692fe2094
+  UI7Kit: ac4132a6684ed66ffc90c186b42473fe73aa668a
 
-COCOAPODS: 0.22.3
+COCOAPODS: 0.23.0

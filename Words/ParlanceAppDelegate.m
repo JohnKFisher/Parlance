@@ -1,6 +1,6 @@
 //
-//  WordsAppDelegate.m
-//  Words
+//  ParlanceAppDelegate.m
+//  Parlance
 //
 //  Created by John Kenneth Fisher on 7/15/13.
 //  Copyright (c) 2013 John Kenneth Fisher. All rights reserved.
@@ -12,6 +12,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // (intending to record that the default setting for "roundsSegment" is "0",
+	// unless that has already been changed by the user in the past.)
+    
+
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs registerDefaults:@{@"roundsSegment": @"0"}];
+    [prefs registerDefaults:@{@"totalRounds": @"10"}];
+    [prefs synchronize];
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

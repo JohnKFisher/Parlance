@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45911AEBD8894065AA9AEEC5 /* libPods.a */; };
+		FE6920C017B40E9900C7C610 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE152A31179C553B0067CBEA /* MenuViewController.m */; };
 		FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
 		FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F941794E0BB0072E836 /* CoreGraphics.framework */; };
 		FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
@@ -323,6 +324,7 @@
 				FEC65FA31794E0BB0072E836 /* ParlanceAppDelegate.m in Sources */,
 				FEC65F9F1794E0BB0072E836 /* main.m in Sources */,
 				FEC65FA91794E0BB0072E836 /* ParlanceViewController.m in Sources */,
+				FE6920C017B40E9900C7C610 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

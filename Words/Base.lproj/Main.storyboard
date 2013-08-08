@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.1" systemVersion="13A524d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Gh3-Ci-VEQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="13A538g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Gh3-Ci-VEQ">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
@@ -85,6 +85,13 @@
                                     <segue destination="Gh3-Ci-VEQ" kind="modal" modalTransitionStyle="flipHorizontal" id="BqU-zs-cOJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-G2-OyG">
+                                <rect key="frame" x="400" y="63" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -95,6 +102,7 @@
                         <outlet property="answerBottom" destination="qtc-As-Ox1" id="obh-wa-HMO"/>
                         <outlet property="answerMiddle" destination="2f1-3M-OUc" id="BqK-M9-RJN"/>
                         <outlet property="answerTop" destination="ur7-uG-ctQ" id="qGl-MZ-Cjc"/>
+                        <outlet property="roundsLabel" destination="XKC-G2-OyG" id="ibp-LV-f73"/>
                         <outlet property="wordLabel" destination="vex-Jl-cyZ" id="mUF-Zf-1MH"/>
                     </connections>
                 </viewController>
@@ -102,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="258" y="332"/>
         </scene>
-        <!--First Screen-->
+        <!--Menu View-->
         <scene sceneID="mWa-EW-6Sj">
             <objects>
-                <viewController id="Gh3-Ci-VEQ" userLabel="First Screen" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController id="Gh3-Ci-VEQ" userLabel="Menu View" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mxE-x4-Vmv"/>
                         <viewControllerLayoutGuide type="bottom" id="m2x-qj-t1P"/>
@@ -115,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4y-Cg-ssj">
-                                <rect key="frame" x="204" y="138" width="73" height="44"/>
+                                <rect key="frame" x="204" y="158" width="73" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Engage">
@@ -129,10 +137,25 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="9fb-Yu-IOJ"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-r4-jg6">
+                                <rect key="frame" x="143" y="122" width="194" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="10 Rounds"/>
+                                    <segment title="20 Rounds"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="roundValueChanged" destination="Gh3-Ci-VEQ" eventType="valueChanged" id="p7k-8B-yzc"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <connections>
+                        <outlet property="roundSelectSegmented" destination="KAF-r4-jg6" id="hRX-Hy-d09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVz-NJ-Gsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
