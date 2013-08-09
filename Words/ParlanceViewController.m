@@ -20,7 +20,13 @@ NSString *plistPath;
 NSMutableDictionary *dictArray;
 NSMutableArray *availableWords;
 
+NSInteger totalRounds;
+NSInteger currentRound;
+
 NSString *totalRoundsString;
+NSString *currentRoundString;
+NSString *completeRoundString;
+
 
 NSInteger randomIndexCorrect;
 NSInteger randomIndexIncorrect1;
@@ -39,6 +45,8 @@ NSString *wordStr;
 NSInteger answerLocation;
 
 UIAlertView *alertView;
+
+
 
 @synthesize wordLabel;
 @synthesize answerTop;
@@ -79,8 +87,26 @@ UIAlertView *alertView;
     
     availableWords = [dictArray objectForKey:@"Builtin"];
     
-    [self startWordRound];
+
+    
+    [self startGame];
 }
+
+
+
+-(void)startGame
+{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    totalRounds = [prefs integerForKey:@"totalRounds"];
+    totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
+    currentRound = 0;
+    
+    [self startWordRound];
+
+    
+}
+
 
 
 
@@ -89,25 +115,17 @@ UIAlertView *alertView;
 
 {
     
-    //reset
-    
     
     answerTop.backgroundColor = [UIColor whiteColor];
     answerMiddle.backgroundColor = [UIColor whiteColor];
     answerBottom.backgroundColor = [UIColor whiteColor];
     
-    
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSInteger totalRounds = [prefs integerForKey:@"totalRounds"];
-    
-    NSString *totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
-
-    self.roundsLabel.text = totalRoundsString;
-
+    currentRound = currentRound+1;
+    currentRoundString = [NSString stringWithFormat:@"%d", currentRound];
+    completeRoundString = [NSString stringWithFormat:@"%@%@%@%@", @"Round ",currentRoundString, @" of ", totalRoundsString];
+    self.roundsLabel.text = completeRoundString;
 
     
-    
-        
         //Creates correct question and answer, and two incorrect answers.
         //Do-Whiles make sure answers don't duplicate.
         
@@ -320,6 +338,7 @@ UIAlertView *alertView;
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
 	// Start a new round and show it on the screen.
+    
 	[self startWordRound];
 }
 
