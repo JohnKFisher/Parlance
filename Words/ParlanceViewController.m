@@ -115,12 +115,18 @@ UIAlertView *alertView;
 
 {
     
+    currentRound = currentRound+1;
+    if (currentRound > totalRounds)
+    {
+        [self gameOver];
+        
+    }
     
     answerTop.backgroundColor = [UIColor whiteColor];
     answerMiddle.backgroundColor = [UIColor whiteColor];
     answerBottom.backgroundColor = [UIColor whiteColor];
     
-    currentRound = currentRound+1;
+    
     currentRoundString = [NSString stringWithFormat:@"%d", currentRound];
     completeRoundString = [NSString stringWithFormat:@"%@%@%@%@", @"Round ",currentRoundString, @" of ", totalRoundsString];
     self.roundsLabel.text = completeRoundString;
@@ -341,6 +347,18 @@ UIAlertView *alertView;
     
 	[self startWordRound];
 }
+
+
+
+-(void)gameOver
+{
+
+    [self performSegueWithIdentifier:@"endgameSegue" sender:self];
+
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,7 @@
 		FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45911AEBD8894065AA9AEEC5 /* libPods.a */; };
 		FE6920C017B40E9900C7C610 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE152A31179C553B0067CBEA /* MenuViewController.m */; };
 		FEA7233417B46FDF00ADAFF1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */; };
+		FEA7233717B4866D00ADAFF1 /* EndgameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */; };
 		FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
 		FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F941794E0BB0072E836 /* CoreGraphics.framework */; };
 		FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
 		FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndgameViewController.h; sourceTree = "<group>"; };
+		FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndgameViewController.m; sourceTree = "<group>"; };
 		FEC65F8F1794E0BB0072E836 /* Parlance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parlance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC65F921794E0BB0072E836 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FEC65F941794E0BB0072E836 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				FEC65F991794E0BB0072E836 /* Supporting Files */,
 				FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */,
 				FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */,
+				FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */,
+				FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */,
 			);
 			name = Parlance;
 			path = Words;
@@ -328,6 +333,7 @@
 			files = (
 				FEC65FA31794E0BB0072E836 /* ParlanceAppDelegate.m in Sources */,
 				FEA7233417B46FDF00ADAFF1 /* AboutViewController.m in Sources */,
+				FEA7233717B4866D00ADAFF1 /* EndgameViewController.m in Sources */,
 				FEC65F9F1794E0BB0072E836 /* main.m in Sources */,
 				FEC65FA91794E0BB0072E836 /* ParlanceViewController.m in Sources */,
 				FE6920C017B40E9900C7C610 /* MenuViewController.m in Sources */,
