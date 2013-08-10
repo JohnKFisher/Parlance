@@ -64,6 +64,9 @@ NSInteger totalRounds;
 
 
 {
+    
+    //stores selection of how-many-rounds.
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
     

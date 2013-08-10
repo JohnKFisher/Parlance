@@ -14,6 +14,14 @@
 
 @implementation EndgameViewController
 
+NSString *lastScoreString;
+NSString *maxScoreString;
+NSString *completeFinalScoreString;
+
+
+@synthesize finalScoreLabel;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +34,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSInteger lastScore = [prefs integerForKey:@"lastScore"];
+    NSInteger totalRounds = [prefs integerForKey:@"totalRounds"];
+    NSInteger maxScore = totalRounds * 10;
+    
+    lastScoreString = [NSString stringWithFormat:@"%d", lastScore];
+    maxScoreString = [NSString stringWithFormat:@"%d", maxScore];
+    
+    completeFinalScoreString = [NSString stringWithFormat:@"%@%@%@", lastScoreString, @" / ",maxScoreString];
+    self.finalScoreLabel.text = completeFinalScoreString;
+
+
+    
+    
 	// Do any additional setup after loading the view.
 }
 

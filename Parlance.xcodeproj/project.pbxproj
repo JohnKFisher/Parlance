@@ -138,11 +138,11 @@
 				FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */,
 				FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */,
 				FEC65FAA1794E0BB0072E836 /* Images.xcassets */,
-				FEC65F991794E0BB0072E836 /* Supporting Files */,
 				FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */,
 				FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */,
 				FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */,
 				FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */,
+				FEC65F991794E0BB0072E836 /* Supporting Files */,
 			);
 			name = Parlance;
 			path = Words;

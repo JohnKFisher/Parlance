@@ -10,4 +10,7 @@
 
 @interface EndgameViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *finalScoreLabel;
+
+
 @end

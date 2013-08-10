@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *wordLabel;
 @property (nonatomic, strong) IBOutlet UILabel *roundsLabel;
+@property (nonatomic, strong) IBOutlet UILabel *scoreLabel;
+
 
 @property (nonatomic, strong) IBOutlet UIButton *answerTop;
 @property (nonatomic, strong) IBOutlet UIButton *answerMiddle;

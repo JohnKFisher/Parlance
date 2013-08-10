@@ -15,18 +15,28 @@
 
 @implementation ParlanceViewController
 
-NSString *plistPath;
+// Getting the words themselves:
 
+NSString *plistPath;
 NSMutableDictionary *dictArray;
 NSMutableArray *availableWords;
 
+// Selecting and tracking rounds:
+
 NSInteger totalRounds;
 NSInteger currentRound;
-
 NSString *totalRoundsString;
 NSString *currentRoundString;
 NSString *completeRoundString;
 
+// Tracking Score:
+
+NSInteger currentScore;
+NSString *currentScoreString;
+NSString *completeScoreString;
+
+
+// Getting and placing word, and correct/incorrect answers
 
 NSInteger randomIndexCorrect;
 NSInteger randomIndexIncorrect1;
@@ -44,11 +54,15 @@ NSString *wordStr;
 
 NSInteger answerLocation;
 
+// The little popup at the end that says if you're right or not.
+// I probably don't want this to be an Alert View in the final.
+
 UIAlertView *alertView;
 
 
 
 @synthesize wordLabel;
+@synthesize scoreLabel;
 @synthesize answerTop;
 @synthesize answerMiddle;
 @synthesize answerBottom;
@@ -59,13 +73,7 @@ UIAlertView *alertView;
 {
     [super viewDidLoad];
     
-
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    
-    
     [self prepRound];
-    
 }
 
 
@@ -74,10 +82,6 @@ UIAlertView *alertView;
 -(void)prepRound
 
 {
-    
-    
-    
-    
     //Pull in Basic Dictionary
     
     plistPath = [[NSBundle mainBundle] pathForResource:@"Dictionary" ofType:@"plist"];
@@ -87,24 +91,24 @@ UIAlertView *alertView;
     
     availableWords = [dictArray objectForKey:@"Builtin"];
     
-
-    
     [self startGame];
 }
 
 
 
 -(void)startGame
+
 {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    // Round select and reset of rounds and score
     
     totalRounds = [prefs integerForKey:@"totalRounds"];
     totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
     currentRound = 0;
+    currentScore = 0;
     
     [self startWordRound];
-
-    
 }
 
 
@@ -114,6 +118,7 @@ UIAlertView *alertView;
 -(void)startWordRound
 
 {
+    //increment round and check if the game is done.
     
     currentRound = currentRound+1;
     if (currentRound > totalRounds)
@@ -121,6 +126,8 @@ UIAlertView *alertView;
         [self gameOver];
         
     }
+    
+    
     
     answerTop.backgroundColor = [UIColor whiteColor];
     answerMiddle.backgroundColor = [UIColor whiteColor];
@@ -147,7 +154,7 @@ UIAlertView *alertView;
             randomIndexIncorrect2 = arc4random() % [availableWords count];
         } while (randomIndexIncorrect2 == randomIndexCorrect || randomIndexIncorrect2 == randomIndexIncorrect1);
         
-        
+    
         
         
         questionCorrect = [availableWords objectAtIndex:randomIndexCorrect];
@@ -193,6 +200,8 @@ UIAlertView *alertView;
 - (void)topAnswerPressed
 {
     
+    // checks if the pressed answer is correct. (TODO: break out "correct" and "incorrect" functions)
+    
     if (answerLocation == 0 )
     {
         alertView = [[UIAlertView alloc]
@@ -204,6 +213,10 @@ UIAlertView *alertView;
         answerTop.backgroundColor = [UIColor greenColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor redColor];
+        currentScore = currentScore + 10;
+        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
+        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
+        self.scoreLabel.text = completeScoreString;
     	[alertView show];
     }
     else if (answerLocation == 1)
@@ -232,9 +245,6 @@ UIAlertView *alertView;
         answerBottom.backgroundColor = [UIColor greenColor];
     	[alertView show];
     }
-    
-    
-
 }
 
 
@@ -242,6 +252,9 @@ UIAlertView *alertView;
 
 - (void)middleAnswerPressed
 {
+    
+    // checks if the pressed answer is correct.
+
     
     if (answerLocation == 0 )
     {
@@ -267,6 +280,10 @@ UIAlertView *alertView;
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor greenColor];
         answerBottom.backgroundColor = [UIColor redColor];
+        currentScore = currentScore + 10;
+        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
+        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
+        self.scoreLabel.text = completeScoreString;
     	[alertView show];
     }
     else
@@ -282,9 +299,6 @@ UIAlertView *alertView;
         answerBottom.backgroundColor = [UIColor greenColor];
     	[alertView show];
     }
-    
-    
-
 }
 
 
@@ -295,6 +309,9 @@ UIAlertView *alertView;
 - (void)bottomAnswerPressed
 {
     
+    // checks if the pressed answer is correct.
+
+    
     if (answerLocation == 0 )
     {
         alertView = [[UIAlertView alloc]
@@ -332,11 +349,12 @@ UIAlertView *alertView;
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor greenColor];
+        currentScore = currentScore + 10;
+        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
+        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
+        self.scoreLabel.text = completeScoreString;
     	[alertView show];
     }
-    
-    
-
 }
 
 
@@ -352,10 +370,12 @@ UIAlertView *alertView;
 
 -(void)gameOver
 {
-
-    [self performSegueWithIdentifier:@"endgameSegue" sender:self];
-
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:currentScore forKey:@"lastScore"];
+    [prefs synchronize];
+    
+    [self performSegueWithIdentifier:@"endgameSegue" sender:self];
 }
 
 
