@@ -139,8 +139,7 @@
 
 by John Kenneth Fisher.
 
-Uses Code by... (and here I credit the code I integrated)
-
+Uses TestFlight SDK 1.3.0 beta 8 for testing.
 
 Thanks to my testers: Thanks Amy!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -307,6 +306,6 @@ Thanks to my testers: Thanks Amy!</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zzY-ZK-H6C"/>
+        <segue reference="Caf-FA-zYi"/>
     </inferredMetricsTieBreakers>
 </document>

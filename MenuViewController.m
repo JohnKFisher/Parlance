@@ -73,11 +73,13 @@ NSInteger totalRounds;
     if(roundSelectSegmented.selectedSegmentIndex == 0){
 		totalRounds = 10;
         [prefs setInteger:0 forKey:@"roundsSegment"];
+        [TestFlight passCheckpoint:@"Changedto10Rounds"];
 
 	}
 	if(roundSelectSegmented.selectedSegmentIndex == 1){
         totalRounds = 20;
         [prefs setInteger:1 forKey:@"roundsSegment"];
+        [TestFlight passCheckpoint:@"Changedto20Rounds"];
 	}
     
     [prefs setInteger:totalRounds forKey:@"totalRounds"];
@@ -88,6 +90,9 @@ NSInteger totalRounds;
 
 
 
+// -(IBAction)launchFeedback {
+//     [TestFlight openFeedbackView];
+// }
 
 
 

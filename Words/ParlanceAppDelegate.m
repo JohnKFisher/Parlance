@@ -13,6 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+    // start of your application:didFinishLaunchingWithOptions
+    
+    // !!!: Use the next line only during beta
+    // [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    
+    [TestFlight takeOff:@"41379b40-6272-432b-9de8-b96d6a08b83a"];
+    
     // (intending to record that the default setting for "roundsSegment" is "0",
 	// unless that has already been changed by the user in the past.)
     

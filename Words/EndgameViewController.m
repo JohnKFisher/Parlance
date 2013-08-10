@@ -35,6 +35,8 @@ NSString *completeFinalScoreString;
 {
     [super viewDidLoad];
     
+
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     NSInteger lastScore = [prefs integerForKey:@"lastScore"];
     NSInteger totalRounds = [prefs integerForKey:@"totalRounds"];
@@ -46,11 +48,21 @@ NSString *completeFinalScoreString;
     completeFinalScoreString = [NSString stringWithFormat:@"%@%@%@", lastScoreString, @" / ",maxScoreString];
     self.finalScoreLabel.text = completeFinalScoreString;
 
+    [TestFlight passCheckpoint:@"FinishedGame"];
+
 
     
     
 	// Do any additional setup after loading the view.
 }
+
+
+
+// -(IBAction)launchFeedback {
+//    [TestFlight openFeedbackView];
+// }
+
+
 
 - (void)didReceiveMemoryWarning
 {

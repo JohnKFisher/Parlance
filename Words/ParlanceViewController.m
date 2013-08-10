@@ -107,6 +107,7 @@ UIAlertView *alertView;
     totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
     currentRound = 0;
     currentScore = 0;
+    [TestFlight passCheckpoint:@"StartedGame"];
     
     [self startWordRound];
 }
