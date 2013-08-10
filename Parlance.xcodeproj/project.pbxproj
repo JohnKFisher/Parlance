@@ -27,8 +27,9 @@
 		FEC65FBE1794E0BB0072E836 /* ParlanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */; };
 		FEC80C3217B5CA1C000D6764 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C2C17B5CA1C000D6764 /* README.md */; };
 		FEC80C3317B5CA1C000D6764 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C2D17B5CA1C000D6764 /* release_notes.md */; };
-		FEC80C3517B5CB27000D6764 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */; };
-		FEC80C3617B5CB30000D6764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2817B5C513000D6764 /* libz.dylib */; };
+		FEC80C3817B5D05E000D6764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C3717B5D05E000D6764 /* Default.png */; };
+		FEC80C3917B5D16B000D6764 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */; };
+		FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2817B5C513000D6764 /* libz.dylib */; };
 		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		FEC80C2E17B5CA1C000D6764 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		FEC80C2F17B5CA1C000D6764 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		FEC80C3017B5CA1C000D6764 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		FEC80C3717B5D05E000D6764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC80C3617B5CB30000D6764 /* libz.dylib in Frameworks */,
-				FEC80C3517B5CB27000D6764 /* libTestFlight.a in Frameworks */,
+				FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */,
 				FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */,
+				FEC80C3917B5D16B000D6764 /* libTestFlight.a in Frameworks */,
 				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
 				FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */,
 				FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */,
@@ -209,6 +211,7 @@
 		FEF0B88817976D6100D29212 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FEC80C3717B5D05E000D6764 /* Default.png */,
 				FEF0B88B1798BB3400D29212 /* Dictionary.plist */,
 			);
 			name = Resources;
@@ -306,6 +309,7 @@
 			files = (
 				FEC80C3317B5CA1C000D6764 /* release_notes.md in Resources */,
 				FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */,
+				FEC80C3817B5D05E000D6764 /* Default.png in Resources */,
 				FEC65FAB1794E0BB0072E836 /* Images.xcassets in Resources */,
 				FEC80C3217B5CA1C000D6764 /* README.md in Resources */,
 				FEC65F9D1794E0BB0072E836 /* InfoPlist.strings in Resources */,
@@ -489,7 +493,6 @@
 			baseConfigurationReference = 18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -513,7 +516,6 @@
 			baseConfigurationReference = 18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

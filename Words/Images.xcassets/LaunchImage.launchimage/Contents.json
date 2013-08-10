@@ -5,6 +5,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-Landscape@2x-1.png",
       "scale" : "2x"
     },
     {
@@ -53,6 +54,7 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "Default-Landscape@2x.png",
       "scale" : "2x"
     },
     {
