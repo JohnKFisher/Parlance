@@ -51,6 +51,8 @@ NSString *incorrectDefinitionStr1;
 NSString *incorrectDefinitionStr2;
 
 NSString *wordStr;
+NSString *lastAnswer;
+
 
 NSInteger answerLocation;
 
@@ -72,7 +74,6 @@ UIAlertView *alertView;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self prepRound];
 }
 
@@ -91,7 +92,21 @@ UIAlertView *alertView;
     
     availableWords = [dictArray objectForKey:@"Builtin"];
     
-    [self startGame];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    totalRounds = [prefs integerForKey:@"totalRounds"];
+    currentRound = 0;
+    currentScore = 0;
+
+    
+    if (totalRounds == 666){
+        [self startHardcoreGame];
+	}
+	else {
+        [self startGame];
+	}
+    
+    
+    
 }
 
 
@@ -99,17 +114,21 @@ UIAlertView *alertView;
 -(void)startGame
 
 {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     
-    // Round select and reset of rounds and score
-    
-    totalRounds = [prefs integerForKey:@"totalRounds"];
-    totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
-    currentRound = 0;
-    currentScore = 0;
     [TestFlight passCheckpoint:@"StartedGame"];
-    
+    totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
     [self startWordRound];
+    
+}
+
+-(void)startHardcoreGame
+
+{
+    
+    [TestFlight passCheckpoint:@"StartedHardcoreGame"];
+    totalRoundsString = @"∞";
+    [self startHardcoreWordRound];
+    
 }
 
 
@@ -197,58 +216,109 @@ UIAlertView *alertView;
 
 
 
+-(void)startHardcoreWordRound
+
+{
+    //increment round and check if the game is done.
+    
+    currentRound = currentRound+1;
+    
+    answerTop.backgroundColor = [UIColor whiteColor];
+    answerMiddle.backgroundColor = [UIColor whiteColor];
+    answerBottom.backgroundColor = [UIColor whiteColor];
+    
+    
+    currentRoundString = [NSString stringWithFormat:@"%d", currentRound];
+    completeRoundString = [NSString stringWithFormat:@"%@%@%@%@", @"Round ",currentRoundString, @" of ", totalRoundsString];
+    self.roundsLabel.text = completeRoundString;
+    
+    
+    //Creates correct question and answer, and two incorrect answers.
+    //Do-Whiles make sure answers don't duplicate.
+    
+    randomIndexCorrect = arc4random() % [availableWords count];
+    
+    do
+    {
+        randomIndexIncorrect1 = arc4random() % [availableWords count];
+    } while (randomIndexIncorrect1 == randomIndexCorrect);
+    
+    do
+    {
+        randomIndexIncorrect2 = arc4random() % [availableWords count];
+    } while (randomIndexIncorrect2 == randomIndexCorrect || randomIndexIncorrect2 == randomIndexIncorrect1);
+    
+    
+    
+    
+    questionCorrect = [availableWords objectAtIndex:randomIndexCorrect];
+    questionIncorrect1 = [availableWords objectAtIndex:randomIndexIncorrect1];
+    questionIncorrect2 = [availableWords objectAtIndex:randomIndexIncorrect2];
+    correctDefinitionStr = [questionCorrect objectForKey:@"Definition"];
+    incorrectDefinitionStr1 = [questionIncorrect1 objectForKey:@"Definition"];
+    incorrectDefinitionStr2 = [questionIncorrect2 objectForKey:@"Definition"];
+    wordStr = [questionCorrect objectForKey:@"Word"];
+    answerLocation = arc4random() % 3;
+    
+    
+    
+    
+    //places above info into the UI
+    
+    self.wordLabel.text = wordStr;
+    
+    
+    if (answerLocation == 0)
+    {
+        [answerTop setTitle:correctDefinitionStr forState:UIControlStateNormal];
+        [answerMiddle setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
+        [answerBottom setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
+    }
+    else if (answerLocation == 1)
+    {
+        [answerTop setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
+        [answerMiddle setTitle:correctDefinitionStr forState:UIControlStateNormal];
+        [answerBottom setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
+    }
+    else
+    {
+        [answerTop setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
+        [answerMiddle setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
+        [answerBottom setTitle:correctDefinitionStr forState:UIControlStateNormal];
+    }
+}
+
+
+
 
 - (void)topAnswerPressed
 {
     
     // checks if the pressed answer is correct. (TODO: break out "correct" and "incorrect" functions)
     
-    if (answerLocation == 0 )
+    if (answerLocation == 0)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Correct!"
-                                  message:@"Correct!"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor greenColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor redColor];
-        currentScore = currentScore + 10;
-        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
-        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
-        self.scoreLabel.text = completeScoreString;
-    	[alertView show];
+        [self correctAnswer];
     }
     else if (answerLocation == 1)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor greenColor];
         answerBottom.backgroundColor = [UIColor redColor];
-    	[alertView show];
+        [self incorrectAnswer];
+
     }
     else
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor greenColor];
-    	[alertView show];
+        [self incorrectAnswer];
     }
 }
-
-
 
 
 - (void)middleAnswerPressed
@@ -257,54 +327,29 @@ UIAlertView *alertView;
     // checks if the pressed answer is correct.
 
     
-    if (answerLocation == 0 )
+    if (answerLocation == 0)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect!"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor greenColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor redColor];
-    	[alertView show];
+        [self incorrectAnswer];
     }
     else if (answerLocation == 1)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Correct!"
-                                  message:@"Correct!"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor greenColor];
         answerBottom.backgroundColor = [UIColor redColor];
-        currentScore = currentScore + 10;
-        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
-        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
-        self.scoreLabel.text = completeScoreString;
-    	[alertView show];
+        [self correctAnswer];
+
     }
     else
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor greenColor];
-    	[alertView show];
+        [self incorrectAnswer];
     }
 }
-
-
-
-
 
 
 - (void)bottomAnswerPressed
@@ -313,60 +358,70 @@ UIAlertView *alertView;
     // checks if the pressed answer is correct.
 
     
-    if (answerLocation == 0 )
+    if (answerLocation == 0)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect!"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor greenColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor redColor];
-    	[alertView show];
+        [self incorrectAnswer];
     }
     else if (answerLocation == 1)
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Incorrect"
-                                  message:@"Incorrect"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor greenColor];
         answerBottom.backgroundColor = [UIColor redColor];
-    	[alertView show];
+        [self incorrectAnswer];
+
     }
     else
     {
-        alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Correct!"
-                                  message:@"Correct!"
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
         answerTop.backgroundColor = [UIColor redColor];
         answerMiddle.backgroundColor = [UIColor redColor];
         answerBottom.backgroundColor = [UIColor greenColor];
-        currentScore = currentScore + 10;
-        currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
-        completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
-        self.scoreLabel.text = completeScoreString;
-    	[alertView show];
+        [self correctAnswer];
     }
+}
+
+
+-(void)correctAnswer
+{
+    lastAnswer = @"Correct";
+    alertView = [[UIAlertView alloc]
+                 initWithTitle:@"Correct!"
+                 message:@"Correct!"
+                 delegate:self
+                 cancelButtonTitle:@"OK"
+                 otherButtonTitles:nil];
+    currentScore = currentScore + 10;
+    currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
+    completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
+    self.scoreLabel.text = completeScoreString;
+    [alertView show];
+}
+
+-(void)incorrectAnswer
+{
+    lastAnswer = @"Incorrect";
+    alertView = [[UIAlertView alloc]
+                 initWithTitle:@"Incorrect"
+                 message:@"Incorrect"
+                 delegate:self
+                 cancelButtonTitle:@"OK"
+                 otherButtonTitles:nil];
+    [alertView show];
 }
 
 
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	// Start a new round and show it on the screen.
+    if (totalRounds == 666 && [lastAnswer  isEqual: @"Incorrect"])
+    {
+        [self gameOver];
+    }
     
 	[self startWordRound];
 }
-
 
 
 -(void)gameOver
