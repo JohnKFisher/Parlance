@@ -9,20 +9,20 @@
 // FoundationExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension 38
-#define COCOAPODS_VERSION_PATCH_FoundationExtension 0
+#define COCOAPODS_VERSION_MINOR_FoundationExtension 39
+#define COCOAPODS_VERSION_PATCH_FoundationExtension 1
 
 // FoundationExtension/FoundationExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension_FoundationExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension_FoundationExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension_FoundationExtension 38
-#define COCOAPODS_VERSION_PATCH_FoundationExtension_FoundationExtension 0
+#define COCOAPODS_VERSION_MINOR_FoundationExtension_FoundationExtension 39
+#define COCOAPODS_VERSION_PATCH_FoundationExtension_FoundationExtension 1
 
 // FoundationExtension/UIKitExtension
 #define COCOAPODS_POD_AVAILABLE_FoundationExtension_UIKitExtension
 #define COCOAPODS_VERSION_MAJOR_FoundationExtension_UIKitExtension 0
-#define COCOAPODS_VERSION_MINOR_FoundationExtension_UIKitExtension 38
-#define COCOAPODS_VERSION_PATCH_FoundationExtension_UIKitExtension 0
+#define COCOAPODS_VERSION_MINOR_FoundationExtension_UIKitExtension 39
+#define COCOAPODS_VERSION_PATCH_FoundationExtension_UIKitExtension 1
 
 // KLSwitch
 #define COCOAPODS_POD_AVAILABLE_KLSwitch
@@ -33,8 +33,8 @@
 // UI7Kit
 #define COCOAPODS_POD_AVAILABLE_UI7Kit
 #define COCOAPODS_VERSION_MAJOR_UI7Kit 0
-#define COCOAPODS_VERSION_MINOR_UI7Kit 7
-#define COCOAPODS_VERSION_PATCH_UI7Kit 6
+#define COCOAPODS_VERSION_MINOR_UI7Kit 8
+#define COCOAPODS_VERSION_PATCH_UI7Kit 0
 
 // cdebug
 #define COCOAPODS_POD_AVAILABLE_cdebug

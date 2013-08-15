@@ -45,7 +45,16 @@ NSString *completeFinalScoreString;
     lastScoreString = [NSString stringWithFormat:@"%d", lastScore];
     maxScoreString = [NSString stringWithFormat:@"%d", maxScore];
     
-    completeFinalScoreString = [NSString stringWithFormat:@"%@%@%@", lastScoreString, @" / ",maxScoreString];
+    
+    if (totalRounds == 666)
+    {
+        completeFinalScoreString = [NSString stringWithFormat:@"%@", lastScoreString];
+    }
+    else
+    {
+        completeFinalScoreString = [NSString stringWithFormat:@"%@%@%@", lastScoreString, @" / ",maxScoreString];
+    }
+    
     self.finalScoreLabel.text = completeFinalScoreString;
 
     [TestFlight passCheckpoint:@"FinishedGame"];

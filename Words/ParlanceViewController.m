@@ -83,14 +83,8 @@ UIAlertView *alertView;
 -(void)prepRound
 
 {
-    //Pull in Basic Dictionary
     
-    plistPath = [[NSBundle mainBundle] pathForResource:@"Dictionary" ofType:@"plist"];
-    dictArray = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
-    
-    //Below loads in "builtin" - will need to be changed when there are more options than this.
-    
-    availableWords = [dictArray objectForKey:@"Builtin"];
+    [self populateArray];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     totalRounds = [prefs integerForKey:@"totalRounds"];
@@ -106,6 +100,19 @@ UIAlertView *alertView;
 	}
     
     
+}
+
+
+-(void)populateArray
+{
+    //Pull in Basic Dictionary
+    
+    plistPath = [[NSBundle mainBundle] pathForResource:@"Dictionary" ofType:@"plist"];
+    dictArray = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    //Below loads in "builtin" - will need to be changed when there are more options than this.
+    
+    availableWords = [dictArray objectForKey:@"Builtin"];
     
 }
 
@@ -157,62 +164,10 @@ UIAlertView *alertView;
     currentRoundString = [NSString stringWithFormat:@"%d", currentRound];
     completeRoundString = [NSString stringWithFormat:@"%@%@%@%@", @"Round ",currentRoundString, @" of ", totalRoundsString];
     self.roundsLabel.text = completeRoundString;
-
     
-        //Creates correct question and answer, and two incorrect answers.
-        //Do-Whiles make sure answers don't duplicate.
-        
-        randomIndexCorrect = arc4random() % [availableWords count];
-        
-        do
-        {
-            randomIndexIncorrect1 = arc4random() % [availableWords count];
-        } while (randomIndexIncorrect1 == randomIndexCorrect);
-        
-        do
-        {
-            randomIndexIncorrect2 = arc4random() % [availableWords count];
-        } while (randomIndexIncorrect2 == randomIndexCorrect || randomIndexIncorrect2 == randomIndexIncorrect1);
-        
-    
-        
-        
-        questionCorrect = [availableWords objectAtIndex:randomIndexCorrect];
-        questionIncorrect1 = [availableWords objectAtIndex:randomIndexIncorrect1];
-        questionIncorrect2 = [availableWords objectAtIndex:randomIndexIncorrect2];
-        correctDefinitionStr = [questionCorrect objectForKey:@"Definition"];
-        incorrectDefinitionStr1 = [questionIncorrect1 objectForKey:@"Definition"];
-        incorrectDefinitionStr2 = [questionIncorrect2 objectForKey:@"Definition"];
-        wordStr = [questionCorrect objectForKey:@"Word"];
-        answerLocation = arc4random() % 3;
-        
-    
-    
-    
-    //places above info into the UI
-    
-    self.wordLabel.text = wordStr;
-    
-
-    if (answerLocation == 0)
-    {
-        [answerTop setTitle:correctDefinitionStr forState:UIControlStateNormal];
-        [answerMiddle setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
-        [answerBottom setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
-    }
-    else if (answerLocation == 1)
-    {
-        [answerTop setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
-        [answerMiddle setTitle:correctDefinitionStr forState:UIControlStateNormal];
-        [answerBottom setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
-    }
-    else
-    {
-        [answerTop setTitle:incorrectDefinitionStr1 forState:UIControlStateNormal];
-        [answerMiddle setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
-        [answerBottom setTitle:correctDefinitionStr forState:UIControlStateNormal];
-    }
+    [self populateQandA];
 }
+
 
 
 
@@ -233,6 +188,12 @@ UIAlertView *alertView;
     self.roundsLabel.text = completeRoundString;
     
     
+    [self populateQandA];
+}
+
+
+-(void)populateQandA
+{
     //Creates correct question and answer, and two incorrect answers.
     //Do-Whiles make sure answers don't duplicate.
     
@@ -286,10 +247,20 @@ UIAlertView *alertView;
         [answerMiddle setTitle:incorrectDefinitionStr2 forState:UIControlStateNormal];
         [answerBottom setTitle:correctDefinitionStr forState:UIControlStateNormal];
     }
+    
+    
+    if (availableWords.count >= 5)
+    {
+        [availableWords removeObjectAtIndex:randomIndexCorrect];
+    }
+    
+    if (availableWords.count <= 4)
+    {
+        [self populateArray];
+    }
+
+
 }
-
-
-
 
 - (void)topAnswerPressed
 {
