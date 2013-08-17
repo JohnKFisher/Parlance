@@ -21,7 +21,6 @@
 
 
 
-
 - (IBAction)topAnswerPressed;
 - (IBAction)middleAnswerPressed;
 - (IBAction)bottomAnswerPressed;

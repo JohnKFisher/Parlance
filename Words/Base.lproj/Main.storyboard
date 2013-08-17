@@ -74,7 +74,7 @@
                                 <rect key="frame" x="20" y="52" width="73" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Exit">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -117,7 +117,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="454"/>
+            <point key="canvasLocation" x="104" y="552"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="In2-M2-nxw">
+            <objects>
+                <viewController id="qcB-dJ-hZa" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLn-9I-TxP"/>
+                        <viewControllerLayoutGuide type="bottom" id="jgw-Q0-hOK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GBc-uo-FpF">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 Seconds Remaining" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq1-k0-Fub">
+                                <rect key="frame" x="151" y="149" width="263" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test ViewController for whatever I'm messing with at the moment." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-oi-W6H">
+                                <rect key="frame" x="20" y="20" width="444" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H47-GR-cKA">
+                                <rect key="frame" x="20" y="270" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="&lt;-- Back"/>
+                                <connections>
+                                    <segue destination="Gh3-Ci-VEQ" kind="modal" id="1Vw-QF-Oq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="countdownLabel" destination="Oq1-k0-Fub" id="rK0-57-A1O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4s-FF-vFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="-130"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="mQI-W5-kZH">
@@ -139,7 +186,7 @@
 
 by John Kenneth Fisher.
 
-Uses TestFlight SDK 1.3.0 beta 8 for testing.
+Uses TestFlight SDK 1.3.0 beta 8 for testing, and UI7Kit 0.7.8 for ios 6 devices.
 
 Thanks to my testers: Thanks Amy!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -170,7 +217,7 @@ Thanks to my testers: Thanks Amy!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUw-vJ-D6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="-38"/>
+            <point key="canvasLocation" x="1436" y="-944"/>
         </scene>
         <!--Endgame View Controller-->
         <scene sceneID="xyO-PY-tGW">
@@ -226,7 +273,7 @@ Thanks to my testers: Thanks Amy!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoo-Lj-Am6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="418"/>
+            <point key="canvasLocation" x="1061" y="582"/>
         </scene>
         <!--Menu View-->
         <scene sceneID="mWa-EW-6Sj">
@@ -286,6 +333,17 @@ Thanks to my testers: Thanks Amy!</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-Px-D1R">
+                                <rect key="frame" x="20" y="255" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Timer Testing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qcB-dJ-hZa" kind="modal" id="8PK-e3-We0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -297,7 +355,7 @@ Thanks to my testers: Thanks Amy!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVz-NJ-Gsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="-361"/>
+            <point key="canvasLocation" x="309" y="-803"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -307,6 +365,6 @@ Thanks to my testers: Thanks Amy!</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zzY-ZK-H6C"/>
+        <segue reference="BqU-zs-cOJ"/>
     </inferredMetricsTieBreakers>
 </document>

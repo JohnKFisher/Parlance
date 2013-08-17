@@ -32,6 +32,7 @@
 		FEC80C3817B5D05E000D6764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C3717B5D05E000D6764 /* Default.png */; };
 		FEC80C3917B5D16B000D6764 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */; };
 		FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2817B5C513000D6764 /* libz.dylib */; };
+		FEEEDB9017C00D8C00B4A026 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */; };
 		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		FEC80C2F17B5CA1C000D6764 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		FEC80C3017B5CA1C000D6764 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		FEC80C3717B5D05E000D6764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +162,8 @@
 				FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */,
 				FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */,
 				FEC65FA41794E0BB0072E836 /* Main.storyboard */,
+				FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */,
+				FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */,
 				FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */,
 				FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */,
 				FEC65FAA1794E0BB0072E836 /* Images.xcassets */,
@@ -389,6 +394,7 @@
 			files = (
 				FEC65FA31794E0BB0072E836 /* ParlanceAppDelegate.m in Sources */,
 				FEA7233417B46FDF00ADAFF1 /* AboutViewController.m in Sources */,
+				FEEEDB9017C00D8C00B4A026 /* TestViewController.m in Sources */,
 				FEA7233717B4866D00ADAFF1 /* EndgameViewController.m in Sources */,
 				FEC65F9F1794E0BB0072E836 /* main.m in Sources */,
 				FEC65FA91794E0BB0072E836 /* ParlanceViewController.m in Sources */,
