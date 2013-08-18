@@ -201,7 +201,7 @@
 
 by John Kenneth Fisher.
 
-Uses TestFlight SDK 1.3.0 beta 8 for testing, and UI7Kit 0.7.8 for ios 6 devices.
+Uses TestFlight SDK 2.0.0 for testing, and UI7Kit 0.8.2 for ios 6 devices.
 
 Thanks to my testers: Thanks Amy!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -380,6 +380,6 @@ Thanks to my testers: Thanks Amy!</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BqU-zs-cOJ"/>
+        <segue reference="Caf-FA-zYi"/>
     </inferredMetricsTieBreakers>
 </document>

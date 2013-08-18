@@ -11,6 +11,13 @@
 		FE6920C017B40E9900C7C610 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE152A31179C553B0067CBEA /* MenuViewController.m */; };
 		FE7639E817B9D99F0071DC0A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7639E717B9D99F0071DC0A /* Crashlytics.framework */; };
 		FE7639EA17B9DB5A0071DC0A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */; };
+		FE985C5C17C04F9F000D48FB /* libTestFlight.a in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5517C04F9F000D48FB /* libTestFlight.a */; };
+		FE985C5D17C04F9F000D48FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5617C04F9F000D48FB /* README.md */; };
+		FE985C5E17C04F9F000D48FB /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5717C04F9F000D48FB /* release_notes.md */; };
+		FE985C5F17C04F9F000D48FB /* TestFlight+AsyncLogging.h in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */; };
+		FE985C6017C04F9F000D48FB /* TestFlight+ManualSessions.h in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */; };
+		FE985C6117C04F9F000D48FB /* TestFlight.h in Resources */ = {isa = PBXBuildFile; fileRef = FE985C5A17C04F9F000D48FB /* TestFlight.h */; };
+		FE985C6217C04FAA000D48FB /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE985C5517C04F9F000D48FB /* libTestFlight.a */; };
 		FEA7233417B46FDF00ADAFF1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */; };
 		FEA7233717B4866D00ADAFF1 /* EndgameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */; };
 		FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F921794E0BB0072E836 /* Foundation.framework */; };
@@ -27,10 +34,7 @@
 		FEC65FB41794E0BB0072E836 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC65F961794E0BB0072E836 /* UIKit.framework */; };
 		FEC65FBC1794E0BB0072E836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */; };
 		FEC65FBE1794E0BB0072E836 /* ParlanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */; };
-		FEC80C3217B5CA1C000D6764 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C2C17B5CA1C000D6764 /* README.md */; };
-		FEC80C3317B5CA1C000D6764 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C2D17B5CA1C000D6764 /* release_notes.md */; };
 		FEC80C3817B5D05E000D6764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC80C3717B5D05E000D6764 /* Default.png */; };
-		FEC80C3917B5D16B000D6764 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */; };
 		FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2817B5C513000D6764 /* libz.dylib */; };
 		FEEEDB9017C00D8C00B4A026 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */; };
 		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
@@ -53,6 +57,12 @@
 		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
 		FE7639E717B9D99F0071DC0A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FE985C5517C04F9F000D48FB /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTestFlight.a; sourceTree = "<group>"; };
+		FE985C5617C04F9F000D48FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file; path = README.md; sourceTree = "<group>"; };
+		FE985C5717C04F9F000D48FB /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = file; path = release_notes.md; sourceTree = "<group>"; };
+		FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		FE985C5A17C04F9F000D48FB /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestFlight.h; sourceTree = "<group>"; };
 		FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndgameViewController.h; sourceTree = "<group>"; };
@@ -77,12 +87,6 @@
 		FEC65FBB1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceTests.m; sourceTree = "<group>"; };
 		FEC80C2817B5C513000D6764 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		FEC80C2C17B5CA1C000D6764 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		FEC80C2D17B5CA1C000D6764 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		FEC80C2E17B5CA1C000D6764 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		FEC80C2F17B5CA1C000D6764 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		FEC80C3017B5CA1C000D6764 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		FEC80C3717B5D05E000D6764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
@@ -96,11 +100,11 @@
 			files = (
 				FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */,
 				FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */,
-				FEC80C3917B5D16B000D6764 /* libTestFlight.a in Frameworks */,
 				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
 				FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */,
 				FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */,
 				FE7639E817B9D99F0071DC0A /* Crashlytics.framework in Frameworks */,
+				FE985C6217C04FAA000D48FB /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,11 +121,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */ = {
+			isa = PBXGroup;
+			children = (
+				FE985C5517C04F9F000D48FB /* libTestFlight.a */,
+				FE985C5617C04F9F000D48FB /* README.md */,
+				FE985C5717C04F9F000D48FB /* release_notes.md */,
+				FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */,
+				FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */,
+				FE985C5A17C04F9F000D48FB /* TestFlight.h */,
+			);
+			path = TestFlightSDK2;
+			sourceTree = "<group>";
+		};
 		FEC65F861794E0BB0072E836 = {
 			isa = PBXGroup;
 			children = (
 				FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */,
-				FEC80C2A17B5CA1C000D6764 /* TestFlightSDK1.3.0-beta.8 */,
+				FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */,
 				FEF0B88817976D6100D29212 /* Resources */,
 				FEC65F981794E0BB0072E836 /* Parlance */,
 				FEC65FB71794E0BB0072E836 /* ParlanceTests */,
@@ -205,19 +222,6 @@
 				FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FEC80C2A17B5CA1C000D6764 /* TestFlightSDK1.3.0-beta.8 */ = {
-			isa = PBXGroup;
-			children = (
-				FEC80C2B17B5CA1C000D6764 /* libTestFlight.a */,
-				FEC80C2C17B5CA1C000D6764 /* README.md */,
-				FEC80C2D17B5CA1C000D6764 /* release_notes.md */,
-				FEC80C2E17B5CA1C000D6764 /* TestFlight+AsyncLogging.h */,
-				FEC80C2F17B5CA1C000D6764 /* TestFlight+ManualSessions.h */,
-				FEC80C3017B5CA1C000D6764 /* TestFlight.h */,
-			);
-			path = "TestFlightSDK1.3.0-beta.8";
 			sourceTree = "<group>";
 		};
 		FEF0B88817976D6100D29212 /* Resources */ = {
@@ -320,14 +324,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC80C3317B5CA1C000D6764 /* release_notes.md in Resources */,
+				FE985C5E17C04F9F000D48FB /* release_notes.md in Resources */,
 				FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */,
+				FE985C6017C04F9F000D48FB /* TestFlight+ManualSessions.h in Resources */,
+				FE985C5C17C04F9F000D48FB /* libTestFlight.a in Resources */,
+				FE985C6117C04F9F000D48FB /* TestFlight.h in Resources */,
 				FEC80C3817B5D05E000D6764 /* Default.png in Resources */,
 				FEC65FAB1794E0BB0072E836 /* Images.xcassets in Resources */,
-				FEC80C3217B5CA1C000D6764 /* README.md in Resources */,
 				FE7639EA17B9DB5A0071DC0A /* Default-568h@2x.png in Resources */,
 				FEC65F9D1794E0BB0072E836 /* InfoPlist.strings in Resources */,
+				FE985C5D17C04F9F000D48FB /* README.md in Resources */,
 				FEC65FA61794E0BB0072E836 /* Main.storyboard in Resources */,
+				FE985C5F17C04F9F000D48FB /* TestFlight+AsyncLogging.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +542,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK1.3.0-beta.8",
+					/Users/jkfisher/Downloads/TestFlightSDK2,
+					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
 				);
 				PRODUCT_NAME = Parlance;
 				PROVISIONING_PROFILE = "";
@@ -560,6 +570,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK1.3.0-beta.8",
+					/Users/jkfisher/Downloads/TestFlightSDK2,
+					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
 				);
 				PRODUCT_NAME = Parlance;
 				PROVISIONING_PROFILE = "";
