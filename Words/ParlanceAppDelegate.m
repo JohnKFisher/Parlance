@@ -21,6 +21,8 @@
     
     [TestFlight takeOff:@"41379b40-6272-432b-9de8-b96d6a08b83a"];
     
+    [Crashlytics startWithAPIKey:@"d3dc162c597971f16683c5f487ec14a8fb3dae64"];
+    
     // (intending to record that the default setting for "roundsSegment" is "0",
 	// unless that has already been changed by the user in the past.)
     
