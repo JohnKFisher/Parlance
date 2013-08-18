@@ -57,12 +57,12 @@
 		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
 		FE7639E717B9D99F0071DC0A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FE985C5517C04F9F000D48FB /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libTestFlight.a; sourceTree = "<group>"; };
-		FE985C5617C04F9F000D48FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file; path = README.md; sourceTree = "<group>"; };
-		FE985C5717C04F9F000D48FB /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = file; path = release_notes.md; sourceTree = "<group>"; };
-		FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		FE985C5A17C04F9F000D48FB /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestFlight.h; sourceTree = "<group>"; };
+		FE985C5517C04F9F000D48FB /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		FE985C5617C04F9F000D48FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		FE985C5717C04F9F000D48FB /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		FE985C5A17C04F9F000D48FB /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndgameViewController.h; sourceTree = "<group>"; };
@@ -541,8 +541,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK1.3.0-beta.8",
-					/Users/jkfisher/Downloads/TestFlightSDK2,
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
 				);
 				PRODUCT_NAME = Parlance;
@@ -569,8 +567,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK1.3.0-beta.8",
-					/Users/jkfisher/Downloads/TestFlightSDK2,
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
 				);
 				PRODUCT_NAME = Parlance;

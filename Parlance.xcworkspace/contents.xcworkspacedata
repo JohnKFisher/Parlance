@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:TestFlightSDK2"
-      name = "TestFlightSDK2">
-      <FileRef
-         location = "group:libTestFlight.a">
-      </FileRef>
-      <FileRef
-         location = "group:README.md">
-      </FileRef>
-      <FileRef
-         location = "group:release_notes.md">
-      </FileRef>
-      <FileRef
-         location = "group:TestFlight+AsyncLogging.h">
-      </FileRef>
-      <FileRef
-         location = "group:TestFlight+ManualSessions.h">
-      </FileRef>
-      <FileRef
-         location = "group:TestFlight.h">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:Parlance.xcodeproj">
    </FileRef>
