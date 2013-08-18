@@ -6,107 +6,107 @@
 	<array>
 		<dict>
 			<key>Word</key>
-			<string>Cat</string>
+			<string>Redound</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>v.</string>
 			<key>Definition</key>
-			<string>Feline Animal</string>
+			<string>To become added; accrue</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Shiny</string>
+			<string>Boffin</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>One engaged in science and tech research</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Footle</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To waste time</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Effusive</string>
 			<key>Speech</key>
 			<string>adj.</string>
 			<key>Definition</key>
-			<string>Reflective</string>
+			<string>With great enthusiasm or emotion</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Amy Hensal</string>
+			<string>Hoodwink</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To deceive; dupe</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Contraband</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Sexy girlfriend</string>
+			<string>Smuggled goods</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Happily</string>
-			<key>Speech</key>
-			<string>adv.</string>
-			<key>Definition</key>
-			<string>With joy</string>
-		</dict>
-		<dict>
-			<key>Word</key>
-			<string>Monkey</string>
+			<string>Impetus</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Primate</string>
+			<string>Driving force or impulse</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Thor</string>
+			<string>Orgulous</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Pet Loach</string>
+			<string>Proud or haughty</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Batman</string>
+			<string>Quip</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Bruce Wayne</string>
+			<string>Clever remark or observation</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Superman</string>
+			<string>Sinuous</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Clark Kent</string>
+			<string>Serpentine or wavy; snakelike</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Green Arrow</string>
+			<string>Tourbillion</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Oliver Queen</string>
+			<string>Whirlwind or vortex</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Green Lantern</string>
+			<string>Depone</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>v.</string>
 			<key>Definition</key>
-			<string>Kyle Rayner</string>
+			<string>Testify; assert under oath</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>The Doctor</string>
+			<string>Utmost</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Pet Betta Fish</string>
-		</dict>
-		<dict>
-			<key>Word</key>
-			<string>James Bond</string>
-			<key>Speech</key>
-			<string>n.</string>
-			<key>Definition</key>
-			<string>Super Spy</string>
-		</dict>
-		<dict>
-			<key>Word</key>
-			<string>Spider-Man</string>
-			<key>Speech</key>
-			<string>n.</string>
-			<key>Definition</key>
-			<string>Peter Parker</string>
+			<string>To the highest degree</string>
 		</dict>
 		<dict>
 			<key>Word</key>
@@ -118,75 +118,75 @@
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Gojira</string>
+			<string>Sapient</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Giant Lizard</string>
+			<string>Possessing great wisdom</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>The Flash</string>
+			<string>Miscible</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Wally West</string>
+			<string>Capable of being mixed without separation</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>James T. Kirk</string>
+			<string>Esplanade</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Original Star Trek</string>
+			<string>Open stretch of paved or grassy ground</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Jean-Luc Picard</string>
+			<string>Utile</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Star Trek TNG</string>
+			<string>Useful</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Ben Sisko</string>
+			<string>Infantilize</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>v.</string>
 			<key>Definition</key>
-			<string>Star Trek DS9</string>
+			<string>To treat like a young child</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Kathryn Janeway</string>
+			<string>Phalanx</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Star Trek VOY</string>
+			<string>Troops in close array</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Jonathan Archer</string>
+			<string>Lackadaisical</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Star Trek ENT</string>
+			<string>Languid; lacking life or spirit</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Nightwing</string>
+			<string>Thwart</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>v.</string>
 			<key>Definition</key>
-			<string>Dick Grayson</string>
+			<string>To successfully oppose</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Batgirl</string>
+			<string>Fungible</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Barbara Gordon</string>
+			<string>Interchangeable; flexible</string>
 		</dict>
 		<dict>
 			<key>Word</key>
@@ -194,63 +194,215 @@
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Scanning Device</string>
+			<string>Scanning Device from "Star Trek"</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Wilma Flintstone</string>
+			<string>Effulgent</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Fred&apos;s Wife</string>
+			<string>Shining brightly; radiant</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Neil Armstrong</string>
+			<string>Umbrage</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Astronaut</string>
+			<string>Feeling of resentment</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Charles Darwin</string>
+			<string>Addlepated</string>
 			<key>Speech</key>
-			<string>n.</string>
+			<string>adj.</string>
 			<key>Definition</key>
-			<string>Scientist</string>
+			<string>Mixed up and confused</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Ben Franklin</string>
+			<string>Hawkshaw</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Founding Father</string>
+			<string>Detective</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Great White Shark</string>
+			<string>Irascible</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Toothy giant fish</string>
+			<string>Easily provoked to anger</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Wonder Woman</string>
+			<string>Chicanery</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Diana Prince</string>
+			<string>Deception by subterfuge; trickery</string>
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Gizmoduck</string>
+			<string>Aseptic</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Preventing infection</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Repertoire</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Fenton Crackshell</string>
+			<string>Supply of skills and capabilities</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Labile</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Frequently changing or unstable</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Cinephile</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Film buff</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Anglophile</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Admirer of England and English culture</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Francophile</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Admirer of France and French culture</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Anglophobe</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Hostile to England and English culture</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Francophobe</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Hostile to France and French culture</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>WYSIWYG</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Software that displays a document as it will when printed</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Encumber</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>Weigh down or burden</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Nonpareil</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Without equal</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Orotund</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Pompous and bombastic</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Burgeon</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>Sprout or Bloom; flourish</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Prosaic</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Dull and unimaginative</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Chilblain</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Swelling caused by exposure to cold</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Millefleur</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Patterned with small flowers and plants</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Demure</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Reserved or modest</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Comely</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Having a pleasing appearance</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Lenitive</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Soothing; alleviating pain</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Vernal</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Youthful; relating to spring</string>
 		</dict>
 	</array>
 </dict>
