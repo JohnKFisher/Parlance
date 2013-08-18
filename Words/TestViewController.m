@@ -14,10 +14,9 @@
 
 @implementation TestViewController
 
-NSTimer *timer;
-CGFloat currentSeconds;
-NSInteger startSeconds;
-NSString *currentSecondsString;
+NSTimer *hardcoreTimer;
+CGFloat currentTimeRemaining;
+NSString *currentTimeRemainingString;
 
 
 @synthesize countdownLabel;
@@ -29,13 +28,12 @@ NSString *currentSecondsString;
     
 //    progress.textColor=[UIColor redColor];
     
-    startSeconds=10;
-    currentSeconds=startSeconds;
+    currentTimeRemaining=10;
 
     
     // Do any additional setup after loading the view, typically from a nib.
     
-    timer=[NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+    hardcoreTimer=[NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
 
 }
 
@@ -44,17 +42,17 @@ NSString *currentSecondsString;
 -(void)timerFired
 {
     
-        if(currentSeconds==0)
+        if(currentTimeRemaining==0.0)
         {
-            [timer invalidate];
+            [hardcoreTimer invalidate];
         }
-        else if(currentSeconds>0)
+        else if(currentTimeRemaining>0.0)
         {
-            currentSeconds-=0.1;
+            currentTimeRemaining-=0.1;
         }
     
-    currentSecondsString = [NSString stringWithFormat:@"%0.1f Seconds Remaining", currentSeconds];
-    self.countdownLabel.text = currentSecondsString;
+    currentTimeRemainingString = [NSString stringWithFormat:@"%0.1f Seconds Remaining", currentTimeRemaining];
+    self.countdownLabel.text = currentTimeRemainingString;
 
           //  [countdownLabel setText:[NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds]];
 }

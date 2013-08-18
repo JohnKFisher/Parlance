@@ -56,10 +56,22 @@ NSString *lastAnswer;
 
 NSInteger answerLocation;
 
+// Hardcore mode Timer stuff
+
+NSTimer *hardcoreTimer;
+CGFloat currentTimeRemaining;
+NSString *currentTimeRemainingString;
+
+
 // The little popup at the end that says if you're right or not.
 // I probably don't want this to be an Alert View in the final.
 
 UIAlertView *alertView;
+
+
+// John - you really gotta figure out what you did wrong and why your boolean didnt work.
+
+NSInteger timerPauseStatus;
 
 
 
@@ -68,21 +80,25 @@ UIAlertView *alertView;
 @synthesize answerTop;
 @synthesize answerMiddle;
 @synthesize answerBottom;
+@synthesize countdownTextLabel;
+@synthesize countdownTimeLabel;
+
 
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self prepRound];
+    [self prepGame];
 }
 
 
 
 
--(void)prepRound
+-(void)prepGame
 
 {
+    
     
     [self populateArray];
     
@@ -124,6 +140,9 @@ UIAlertView *alertView;
     
     [TestFlight passCheckpoint:@"StartedGame"];
     totalRoundsString = [NSString stringWithFormat:@"%d", totalRounds];
+    self.countdownTextLabel.hidden = YES;
+    self.countdownTimeLabel.hidden = YES;
+
     [self startWordRound];
     
 }
@@ -134,6 +153,12 @@ UIAlertView *alertView;
     
     [TestFlight passCheckpoint:@"StartedHardcoreGame"];
     totalRoundsString = @"∞";
+    self.countdownTextLabel.hidden = NO;
+    self.countdownTimeLabel.hidden = NO;
+
+    hardcoreTimer=[NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+    currentTimeRemaining = 10.5;
+
     [self startHardcoreWordRound];
     
 }
@@ -187,8 +212,13 @@ UIAlertView *alertView;
     completeRoundString = [NSString stringWithFormat:@"%@%@%@%@", @"Round ",currentRoundString, @" of ", totalRoundsString];
     self.roundsLabel.text = completeRoundString;
     
-    
     [self populateQandA];
+    
+    currentTimeRemaining = 10.1;
+    timerPauseStatus = 0;
+
+    
+
 }
 
 
@@ -267,6 +297,9 @@ UIAlertView *alertView;
     
     // checks if the pressed answer is correct. (TODO: break out "correct" and "incorrect" functions)
     
+    timerPauseStatus = 1;
+
+    
     if (answerLocation == 0)
     {
         answerTop.backgroundColor = [UIColor greenColor];
@@ -289,6 +322,8 @@ UIAlertView *alertView;
         answerBottom.backgroundColor = [UIColor greenColor];
         [self incorrectAnswer];
     }
+    
+
 }
 
 
@@ -297,6 +332,7 @@ UIAlertView *alertView;
     
     // checks if the pressed answer is correct.
 
+    timerPauseStatus = 1;
     
     if (answerLocation == 0)
     {
@@ -311,7 +347,6 @@ UIAlertView *alertView;
         answerMiddle.backgroundColor = [UIColor greenColor];
         answerBottom.backgroundColor = [UIColor redColor];
         [self correctAnswer];
-
     }
     else
     {
@@ -320,6 +355,8 @@ UIAlertView *alertView;
         answerBottom.backgroundColor = [UIColor greenColor];
         [self incorrectAnswer];
     }
+    
+
 }
 
 
@@ -327,6 +364,8 @@ UIAlertView *alertView;
 {
     
     // checks if the pressed answer is correct.
+    
+    timerPauseStatus = 1;
 
     
     if (answerLocation == 0)
@@ -353,6 +392,11 @@ UIAlertView *alertView;
     }
 }
 
+
+- (void)exitButtonPressed
+{
+    [hardcoreTimer invalidate];
+}
 
 -(void)correctAnswer
 {
@@ -391,13 +435,52 @@ UIAlertView *alertView;
         [self gameOver];
     }
     
-	[self startWordRound];
+    if (totalRounds == 666)
+    {
+        [self startHardcoreWordRound];
+    }
+    else
+    {
+        [self startWordRound];
+
+    }
+    
 }
+
+
+
+-(void)timerFired
+{
+    
+    if (timerPauseStatus == 0)
+    {
+        
+        
+        if(currentTimeRemaining<0.1)
+        {
+            [self gameOver];
+        }
+        else
+        {
+            currentTimeRemaining-=0.1;
+        }
+        
+        currentTimeRemainingString = [NSString stringWithFormat:@"%0.2f", currentTimeRemaining];
+        self.countdownTimeLabel.text = currentTimeRemainingString;
+        
+    }
+    
+ 
+    
+}
+
 
 
 -(void)gameOver
 {
     
+    [hardcoreTimer invalidate];
+
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:currentScore forKey:@"lastScore"];
     [prefs synchronize];

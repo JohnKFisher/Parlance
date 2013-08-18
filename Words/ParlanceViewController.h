@@ -20,10 +20,17 @@
 @property (nonatomic, strong) IBOutlet UIButton *answerBottom;
 
 
+@property (nonatomic, strong) IBOutlet UILabel *countdownTextLabel;
+@property (nonatomic, strong) IBOutlet UILabel *countdownTimeLabel;
+
+// @property (assign) BOOL pauseStatus;
+
+
 
 - (IBAction)topAnswerPressed;
 - (IBAction)middleAnswerPressed;
 - (IBAction)bottomAnswerPressed;
+- (IBAction)exitButtonPressed;
 
 
 
