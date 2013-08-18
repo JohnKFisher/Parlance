@@ -52,7 +52,10 @@ NSInteger totalRounds;
 	}
 	if(roundSelectSegmented.selectedSegmentIndex == 1){
         totalRounds = 20;
-	} 
+	}
+    if(roundSelectSegmented.selectedSegmentIndex == 2){
+        totalRounds = 666;
+	}
     
 	// Do any additional setup after loading the view.
 }
@@ -80,6 +83,12 @@ NSInteger totalRounds;
         totalRounds = 20;
         [prefs setInteger:1 forKey:@"roundsSegment"];
         [TestFlight passCheckpoint:@"Changedto20Rounds"];
+	}
+    
+	if(roundSelectSegmented.selectedSegmentIndex == 2){
+        totalRounds = 666;
+        [prefs setInteger:2 forKey:@"roundsSegment"];
+        [TestFlight passCheckpoint:@"ChangedtoHardcoreMode"];
 	}
     
     [prefs setInteger:totalRounds forKey:@"totalRounds"];
