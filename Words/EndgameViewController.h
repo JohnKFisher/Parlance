@@ -11,6 +11,8 @@
 @interface EndgameViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UILabel *finalScoreLabel;
+@property (nonatomic, strong) IBOutlet UILabel *highScoreLabel;
+
 
 // - (IBAction)launchFeedback;
 

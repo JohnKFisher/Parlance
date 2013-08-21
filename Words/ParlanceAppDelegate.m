@@ -30,6 +30,7 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs registerDefaults:@{@"roundsSegment": @"0"}];
     [prefs registerDefaults:@{@"totalRounds": @"10"}];
+    [prefs registerDefaults:@{@"hcHighScore": @"0"}];
     [prefs synchronize];
     
     

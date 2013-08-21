@@ -276,6 +276,13 @@ Thanks to my testers: Thanks Amy!</string>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous High Score: 0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdS-lc-p8n">
+                                <rect key="frame" x="95" y="186" width="291" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -284,6 +291,7 @@ Thanks to my testers: Thanks Amy!</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="finalScoreLabel" destination="xbk-ze-KRA" id="yGP-o5-FHt"/>
+                        <outlet property="highScoreLabel" destination="HdS-lc-p8n" id="0sw-hr-e6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoo-Lj-Am6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,6 +391,6 @@ Thanks to my testers: Thanks Amy!</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BqU-zs-cOJ"/>
+        <segue reference="zzY-ZK-H6C"/>
     </inferredMetricsTieBreakers>
 </document>
