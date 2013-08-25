@@ -10,10 +10,127 @@ PODS:
   - FoundationExtension/UIKitExtension (0.39.1):
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
-  - KLSwitch (1.5)
-  - UI7Kit (0.8.2):
+  - SevenSwitch (1.3.0)
+  - UI7Kit (0.8.10):
+    - UI7Kit/All
+  - UI7Kit/All (0.8.10):
+    - UI7Kit/UI7ActionSheet
+    - UI7Kit/UI7AlertView
+    - UI7Kit/UI7BarButtonItem
+    - UI7Kit/UI7Button
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7NavigationBar
+    - UI7Kit/UI7NavigationController
+    - UI7Kit/UI7PickerView
+    - UI7Kit/UI7ProgressView
+    - UI7Kit/UI7SearchBar
+    - UI7Kit/UI7SegmentedControl
+    - UI7Kit/UI7Slider
+    - UI7Kit/UI7Stepper
+    - UI7Kit/UI7Switch/SevenSwitch
+    - UI7Kit/UI7TabBar
+    - UI7Kit/UI7TabBarController
+    - UI7Kit/UI7TabBarItem
+    - UI7Kit/UI7TableView
+    - UI7Kit/UI7TableViewCell
+    - UI7Kit/UI7TextField
+    - UI7Kit/UI7Toolbar
+    - UI7Kit/UI7View
+    - UI7Kit/UI7ViewController
+    - UI7Kit/UI7Window
+  - UI7Kit/Core (0.8.10):
+    - cdebug
     - FoundationExtension (~> 0.39)
-    - KLSwitch (~> 1.5)
+    - UI7Kit/UI7Color
+  - UI7Kit/UI7ActionSheet (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+  - UI7Kit/UI7AlertView (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Button
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+  - UI7Kit/UI7BarButtonItem (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Font
+  - UI7Kit/UI7Button (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7BarButtonItem
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7View
+  - UI7Kit/UI7Color (0.8.10)
+  - UI7Kit/UI7Font (0.8.10):
+    - UI7Kit/Core
+  - UI7Kit/UI7NavigationBar (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7BarButtonItem
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+  - UI7Kit/UI7NavigationController (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7NavigationBar
+    - UI7Kit/UI7Toolbar
+  - UI7Kit/UI7PickerView (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7TableView
+    - UI7Kit/UI7TableViewCell
+    - UI7Kit/UI7View
+  - UI7Kit/UI7ProgressView (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7View
+  - UI7Kit/UI7SearchBar (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+  - UI7Kit/UI7SegmentedControl (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7View
+  - UI7Kit/UI7Slider (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7View
+  - UI7Kit/UI7Stepper (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7View
+  - UI7Kit/UI7Switch/SevenSwitch (0.8.10):
+    - SevenSwitch (~> 1.3.0)
+    - UI7Kit/Core
+  - UI7Kit/UI7TabBar (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7View
+  - UI7Kit/UI7TabBarController (0.8.10):
+    - UI7Kit/Core
+  - UI7Kit/UI7TabBarItem (0.8.10):
+    - UI7Kit/Core
+  - UI7Kit/UI7TableView (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+  - UI7Kit/UI7TableViewCell (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+    - UI7Kit/UI7Font
+    - UI7Kit/UI7View
+  - UI7Kit/UI7TextField (0.8.10):
+    - UI7Kit/Core
+  - UI7Kit/UI7Toolbar (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7Color
+  - UI7Kit/UI7View (0.8.10):
+    - UI7Kit/Core
+  - UI7Kit/UI7ViewController (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7BarButtonItem
+    - UI7Kit/UI7NavigationBar
+  - UI7Kit/UI7Window (0.8.10):
+    - UI7Kit/Core
+    - UI7Kit/UI7View
 
 DEPENDENCIES:
   - UI7Kit
@@ -21,7 +138,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
   FoundationExtension: fdd92e10521774428b2280c715c059e7ad6710c8
-  KLSwitch: 27e07101397ce250acbf6c3a65349cdf69f4bcec
-  UI7Kit: d83d9f98c266f62e7a9597bb82c8354a6bda25af
+  SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
+  UI7Kit: 06ddc3611cdfb3adb8ab73bdb08d365fe2b9ded3
 
 COCOAPODS: 0.23.0

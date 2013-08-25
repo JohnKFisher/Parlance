@@ -53,8 +53,8 @@
 /* Begin PBXFileReference section */
 		18ABA0F1DDBB4069BA1B97AD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		45911AEBD8894065AA9AEEC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE152A30179C553B0067CBEA /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../MenuViewController.h; sourceTree = "<group>"; };
-		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
+		FE152A30179C553B0067CBEA /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FE152A31179C553B0067CBEA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		FE7639E717B9D99F0071DC0A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FE985C5517C04F9F000D48FB /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -63,10 +63,10 @@
 		FE985C5817C04F9F000D48FB /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		FE985C5917C04F9F000D48FB /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		FE985C5A17C04F9F000D48FB /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndgameViewController.h; sourceTree = "<group>"; };
-		FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndgameViewController.m; sourceTree = "<group>"; };
+		FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Words/AboutViewController.h; sourceTree = "<group>"; };
+		FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Words/AboutViewController.m; sourceTree = "<group>"; };
+		FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EndgameViewController.h; path = Words/EndgameViewController.h; sourceTree = "<group>"; };
+		FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EndgameViewController.m; path = Words/EndgameViewController.m; sourceTree = "<group>"; };
 		FEC65F8F1794E0BB0072E836 /* Parlance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parlance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC65F921794E0BB0072E836 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FEC65F941794E0BB0072E836 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,12 +75,12 @@
 		FEC65F9C1794E0BB0072E836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FEC65F9E1794E0BB0072E836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEC65FA01794E0BB0072E836 /* Parlance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parlance-Prefix.pch"; sourceTree = "<group>"; };
-		FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParlanceAppDelegate.h; sourceTree = "<group>"; };
-		FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceAppDelegate.m; sourceTree = "<group>"; };
+		FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParlanceAppDelegate.h; path = Words/ParlanceAppDelegate.h; sourceTree = "<group>"; };
+		FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ParlanceAppDelegate.m; path = Words/ParlanceAppDelegate.m; sourceTree = "<group>"; };
 		FEC65FA51794E0BB0072E836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParlanceViewController.h; sourceTree = "<group>"; };
-		FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceViewController.m; sourceTree = "<group>"; };
-		FEC65FAA1794E0BB0072E836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ParlanceViewController.h; path = Words/ParlanceViewController.h; sourceTree = "<group>"; };
+		FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ParlanceViewController.m; path = Words/ParlanceViewController.m; sourceTree = "<group>"; };
+		FEC65FAA1794E0BB0072E836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Words/Images.xcassets; sourceTree = "<group>"; };
 		FEC65FB01794E0BB0072E836 /* ParlanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParlanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC65FB11794E0BB0072E836 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FEC65FB91794E0BB0072E836 /* ParlanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParlanceTests-Info.plist"; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		FEC65FBD1794E0BB0072E836 /* ParlanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParlanceTests.m; sourceTree = "<group>"; };
 		FEC80C2817B5C513000D6764 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		FEC80C3717B5D05E000D6764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = Words/TestViewController.h; sourceTree = "<group>"; };
+		FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = Words/TestViewController.m; sourceTree = "<group>"; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +121,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE16B33D17C4648B00A0D7FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE152A30179C553B0067CBEA /* MenuViewController.h */,
+				FE152A31179C553B0067CBEA /* MenuViewController.m */,
+				FEC65FA41794E0BB0072E836 /* Main.storyboard */,
+				FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */,
+				FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */,
+				FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */,
+				FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */,
+				FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */,
+				FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */,
+				FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */,
+				FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,10 +155,11 @@
 		FEC65F861794E0BB0072E836 = {
 			isa = PBXGroup;
 			children = (
-				FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */,
-				FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */,
+				FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */,
+				FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */,
+				FEC65F991794E0BB0072E836 /* Supporting Files */,
+				FE16B33D17C4648B00A0D7FF /* View Controllers */,
 				FEF0B88817976D6100D29212 /* Resources */,
-				FEC65F981794E0BB0072E836 /* Parlance */,
 				FEC65FB71794E0BB0072E836 /* ParlanceTests */,
 				FEC65F911794E0BB0072E836 /* Frameworks */,
 				FEC65F901794E0BB0072E836 /* Products */,
@@ -160,6 +179,7 @@
 		FEC65F911794E0BB0072E836 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */,
 				FE7639E717B9D99F0071DC0A /* Crashlytics.framework */,
 				FEC80C2817B5C513000D6764 /* libz.dylib */,
 				FEC65F921794E0BB0072E836 /* Foundation.framework */,
@@ -171,29 +191,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FEC65F981794E0BB0072E836 /* Parlance */ = {
-			isa = PBXGroup;
-			children = (
-				FE152A30179C553B0067CBEA /* MenuViewController.h */,
-				FE152A31179C553B0067CBEA /* MenuViewController.m */,
-				FEC65FA11794E0BB0072E836 /* ParlanceAppDelegate.h */,
-				FEC65FA21794E0BB0072E836 /* ParlanceAppDelegate.m */,
-				FEC65FA41794E0BB0072E836 /* Main.storyboard */,
-				FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */,
-				FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */,
-				FEC65FA71794E0BB0072E836 /* ParlanceViewController.h */,
-				FEC65FA81794E0BB0072E836 /* ParlanceViewController.m */,
-				FEC65FAA1794E0BB0072E836 /* Images.xcassets */,
-				FEA7233217B46FDF00ADAFF1 /* AboutViewController.h */,
-				FEA7233317B46FDF00ADAFF1 /* AboutViewController.m */,
-				FEA7233517B4866D00ADAFF1 /* EndgameViewController.h */,
-				FEA7233617B4866D00ADAFF1 /* EndgameViewController.m */,
-				FEC65F991794E0BB0072E836 /* Supporting Files */,
-			);
-			name = Parlance;
-			path = Words;
-			sourceTree = "<group>";
-		};
 		FEC65F991794E0BB0072E836 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +200,7 @@
 				FEC65FA01794E0BB0072E836 /* Parlance-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Words;
 			sourceTree = "<group>";
 		};
 		FEC65FB71794E0BB0072E836 /* ParlanceTests */ = {
@@ -227,7 +225,9 @@
 		FEF0B88817976D6100D29212 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FE7639E917B9DB5A0071DC0A /* Default-568h@2x.png */,
 				FEC80C3717B5D05E000D6764 /* Default.png */,
+				FEC65FAA1794E0BB0072E836 /* Images.xcassets */,
 				FEF0B88B1798BB3400D29212 /* Dictionary.plist */,
 			);
 			name = Resources;
@@ -443,6 +443,7 @@
 				FEC65FA51794E0BB0072E836 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Words;
 			sourceTree = "<group>";
 		};
 		FEC65FBA1794E0BB0072E836 /* InfoPlist.strings */ = {

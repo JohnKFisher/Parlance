@@ -63,6 +63,12 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
     [self _backgroundColorUpdated];
 }
 
+- (CGSize)intrinsicContentSize {
+    CGSize contentSize = [super intrinsicContentSize];
+    contentSize.height = MAX(29.0f, contentSize.height);
+    return contentSize;
+}
+
 - (void)_tintColorUpdated {
     [super _tintColorUpdated];
 
