@@ -110,11 +110,11 @@
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Ben Matlock</string>
+			<string>Paleography</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Attorney</string>
+			<string>Study of ancient writings</string>
 		</dict>
 		<dict>
 			<key>Word</key>
@@ -190,11 +190,11 @@
 		</dict>
 		<dict>
 			<key>Word</key>
-			<string>Tricorder</string>
+			<string>Concupiscent</string>
 			<key>Speech</key>
 			<string>n.</string>
 			<key>Definition</key>
-			<string>Scanning Device from "Star Trek"</string>
+			<string>Lustful and libidinous</string>
 		</dict>
 		<dict>
 			<key>Word</key>
@@ -404,6 +404,527 @@
 			<key>Definition</key>
 			<string>Youthful; relating to spring</string>
 		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Philtrum</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>The vertical groove between the nose and lip</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Poetaster</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>An inferior poet</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Anomia</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Inability to recall names of people or objects</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Agelast</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Person who never laughs</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Abderian</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Prone to excessive laughter</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Denouement</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Outcome or conclusion of a story</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Dauphin</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Heir apparent</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Bailiwick</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Person's area of expertise</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Perspicaciousness</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Keenness of perception</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Cynic</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A person with a negative outlook</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Pedigree</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Lineage or ancestry</string>
+		</dict>
+		<dict>
+			<key>Word</key>
+			<string>Valetudinarian</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Someone constantly concerned about their health</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Dyspeptic</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Gloomy; irritable</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Inosculate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>Join or unite</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Sylvan</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Related to a forest or woods</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Quadrennium</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A four-year period</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Wakerife</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Awake and alert</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Conversazione</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A formal gathering for conversation</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Subjugate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To bring under control</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Malingerer</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Someone who fakes illness to avoid work</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Mithridatism</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Developing immunity to a poison by taking increasing doses</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Blitzkrieg</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>An intense, swift, campaign</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Cautelous</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Cautious</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Pervicacious</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Very Stubborn</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Histrionics</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Melodramatic behavior calculated for effect</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Cautelous</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Cautious</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Hibernian</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Relating to Ireland</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Feint</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>To make a deceptive movement</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Morphean</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Sleep-inducing</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Bacchanal</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A wild and drunken celebration</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Decorticate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To remove the outer layer</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Crepitate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To make a crackling or popping sound</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Hiemal</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Relating to the winter</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Tenuous</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Weak and unsubstantiated</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Marmoreal</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Resembling marble</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Incommodious</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Inconvenient or uncomfortable</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Impeccable</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Faultless or blameless</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Munificent</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Extremely generous</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Pugilist</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A boxer</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Impeccable</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Faultless or blameless</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Lucriferous</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Lucrative and profitable</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Naff</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Unstylish or of poor quality</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Incognito</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Having one's identity hidden</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Perdure</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To endure; remain in existence</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Ablate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To remove by erosion, vaporization, or melting</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Exculpate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To show one is not guilty of wrongdoing</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Cunctator</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Hesitator; procrastinator</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Thewless</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Cowardly</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Groundswell</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Surge of opinion</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Scuttlebutt</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Rumors and gossip</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Machinate</string>
+			<key>Speech</key>
+			<string>v.</string>
+			<key>Definition</key>
+			<string>To plot and scheme</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Conterminous</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Having a common boundary</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Sang-froid</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Calmness under stress</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Shrapnel</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Fragments of an exploded bomb or mine</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Dilettante</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Someone with a superficial or cursory interest in a topic</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Connubial</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Related to marriage or the state of being married</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Gerontology</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>The study of aging</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Dysthymia</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Mild depression</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Marriage</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Formal union of two people, recognized by law</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Noosphere</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Sum of all knowledge and culture</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Snowbroth</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Melted snow</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Quisling</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Traitor</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Snowbroth</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>Melted snow</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Hyperbolic</string>
+			<key>Speech</key>
+			<string>adj.</string>
+			<key>Definition</key>
+			<string>Exaggerated</string>
+		</dict>
+        <dict>
+			<key>Word</key>
+			<string>Chartreuse</string>
+			<key>Speech</key>
+			<string>n.</string>
+			<key>Definition</key>
+			<string>A light, yellow-green</string>
+		</dict>
+
 	</array>
 </dict>
 </plist>

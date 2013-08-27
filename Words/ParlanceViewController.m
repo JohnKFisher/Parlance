@@ -32,6 +32,7 @@ NSString *completeRoundString;
 // Tracking Score:
 
 NSInteger currentScore;
+NSInteger timeBasedScore;
 NSString *currentScoreString;
 NSString *completeScoreString;
 
@@ -407,12 +408,25 @@ NSInteger timerPauseStatus;
                  delegate:self
                  cancelButtonTitle:@"OK"
                  otherButtonTitles:nil];
-    currentScore = currentScore + 10;
+    
+    if (totalRounds == 666)
+    {
+        timeBasedScore = currentTimeRemaining * 10;
+        currentScore = currentScore + timeBasedScore + 1;
+    }
+        else
+    {
+        currentScore = currentScore + 10;
+    }
+    
+    
     currentScoreString = [NSString stringWithFormat:@"%d", currentScore];
     completeScoreString = [NSString stringWithFormat:@"%@%@", @"Score: ",currentScoreString];
     self.scoreLabel.text = completeScoreString;
     [alertView show];
 }
+
+
 
 -(void)incorrectAnswer
 {
