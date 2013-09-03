@@ -14,9 +14,14 @@
 
 @implementation TestViewController
 
-NSTimer *hardcoreTimer;
-CGFloat currentTimeRemaining;
-NSString *currentTimeRemainingString;
+
+NSString *plistPath;
+NSMutableDictionary *dictArray;
+NSMutableArray *availableWords;
+NSInteger numberOfWords;
+NSString *numberOfWordsString;
+
+
 
 
 @synthesize countdownLabel;
@@ -26,37 +31,25 @@ NSString *currentTimeRemainingString;
 {
     [super viewDidLoad];
     
-//    progress.textColor=[UIColor redColor];
     
-    currentTimeRemaining=10;
+    plistPath = [[NSBundle mainBundle] pathForResource:@"Dictionary" ofType:@"plist"];
+    dictArray = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    //Below loads in "builtin" - will need to be changed when there are more options than this.
+    
+    availableWords = [dictArray objectForKey:@"Builtin"];
+    numberOfWords = [availableWords count];
+
+    numberOfWordsString = [NSString stringWithFormat:@"%d", numberOfWords];
+    self.countdownLabel.text = numberOfWordsString;
+
+
 
     
     // Do any additional setup after loading the view, typically from a nib.
     
-    hardcoreTimer=[NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
 
 }
-
-
-
--(void)timerFired
-{
-    
-        if(currentTimeRemaining==0.0)
-        {
-            [hardcoreTimer invalidate];
-        }
-        else if(currentTimeRemaining>0.0)
-        {
-            currentTimeRemaining-=0.1;
-        }
-    
-    currentTimeRemainingString = [NSString stringWithFormat:@"%0.1f Seconds Remaining", currentTimeRemaining];
-    self.countdownLabel.text = currentTimeRemainingString;
-
-          //  [countdownLabel setText:[NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds]];
-}
-
 
 
 @end
