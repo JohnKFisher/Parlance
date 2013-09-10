@@ -41,7 +41,7 @@ NSString *UI7TabBarStyle = @"UI7TabBarStyle";
             self.backgroundColor = [UI7Color defaultBarColor];
         }   break;
         case UIBarStyleBlackOpaque: {
-            self.backgroundColor = [UI7Color blackBarColor];
+            self.backgroundColor = [UI7Color blackTabBarColor];
         }   break;
         default:
             break;
@@ -61,9 +61,11 @@ NSString *UI7TabBarStyle = @"UI7TabBarStyle";
 - (id)__initWithCoder:(NSCoder *)aDecoder { assert(NO); return nil; }
 - (id)__initWithFrame:(CGRect)frame { assert(NO); return nil; }
 
-- (void)_tabBarInit {
+- (void)_tabBarInitTheme {
     [self _setBarStyle:self.barStyle];
+}
 
+- (void)_tabBarInit {
     self.tintColor = [UIColor grayColor];
     self.selectedImageTintColor = self.superview.tintColor;
 
@@ -114,13 +116,15 @@ NSString *UI7TabBarStyle = @"UI7TabBarStyle";
     [self exportSelector:@selector(initWithCoder:) toClass:target];
     [self exportSelector:@selector(initWithFrame:) toClass:target];
 
-    [target addMethodForSelector:@selector(barStyle) fromMethod:[target methodForSelector:@selector(_barStyle)]];
-    [target addMethodForSelector:@selector(setBarStyle:) fromMethod:[target methodForSelector:@selector(_setBarStyle:)]];
+    [target addMethodForSelector:@selector(barStyle) fromMethod:[target methodObjectForSelector:@selector(_barStyle)]];
+    [target addMethodForSelector:@selector(setBarStyle:) fromMethod:[target methodObjectForSelector:@selector(_setBarStyle:)]];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [self __initWithCoder:aDecoder];
     if (self != nil) {
+        NSInteger style = [aDecoder decodeIntegerForKey:@"UIBarStyle"];
+        self.barStyle = style;
         [self _tabBarInit];
         [self setTintColor:self.tintColor]; // tweak to regenerate icons
     }
@@ -130,6 +134,7 @@ NSString *UI7TabBarStyle = @"UI7TabBarStyle";
 - (id)initWithFrame:(CGRect)frame {
     self = [self __initWithFrame:frame];
     if (self) {
+        [self _tabBarInitTheme];
         [self _tabBarInit];
     }
     return self;

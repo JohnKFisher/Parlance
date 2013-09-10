@@ -40,6 +40,7 @@
 #import "UI7KitPrivate.h"
 
 CGFloat UI7SegmentedControlHeight = 29.0f;
+CGFloat UI7SegmentedControlCellWidthDefault = 80.0f;
 
 @implementation UISegmentedControl (Patch)
 
@@ -47,6 +48,7 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
 
 - (id)__initWithItems:(NSArray *)items { assert(NO); return nil; }
 - (id)__initWithFrame:(CGRect)frame { assert(NO); return nil; }
+- (id)__initWithCoder:(NSCoder *)aDecoder { asctime(NO); return nil; }
 - (void)__awakeFromNib { assert(NO); }
 - (UIColor *)__tintColor { assert(NO); return nil; }
 - (void)__setTintColor:(UIColor *)tintColor { assert(NO); }
@@ -80,11 +82,19 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
     UIImage *selectedBackgroundImage = [UIImage roundedImageWithSize:CGSizeMake(10.0f, self.frame.size.height) color:tintColor radius:UI7ControlRadius];
     UIImage *highlightedBackgroundImage = [UIImage roundedImageWithSize:CGSizeMake(10.0f, self.frame.size.height) color:[tintColor highligtedColorForBackgroundColor:self.stackedBackgroundColor] radius:UI7ControlRadius];
 
-    NSDictionary *attributes = @{
-                                 UITextAttributeFont: [UI7Font systemFontOfSize:13.0 attribute:UI7FontAttributeMedium],
-                                 UITextAttributeTextColor: tintColor,
-                                 UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
-                                 };
+    NSDictionary *oldAttributes = [self titleTextAttributesForState:UIControlStateNormal];
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    if (oldAttributes[UITextAttributeFont]) {
+        attributes[UITextAttributeFont] = oldAttributes[UITextAttributeFont];
+    } else {
+        attributes[UITextAttributeFont] = [UI7Font systemFontOfSize:13.0 attribute:UI7FontAttributeMedium];
+    }
+    if (oldAttributes[UITextAttributeTextShadowOffset]) {
+        attributes[UITextAttributeTextShadowOffset] = oldAttributes[UITextAttributeTextShadowOffset];
+    } else {
+        attributes[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+    }
+    attributes[UITextAttributeTextColor] = tintColor;
     [self setTitleTextAttributes:attributes forState:UIControlStateNormal];
 
     NSDictionary *highlightedAttributes = @{UITextAttributeTextColor: tintColor};
@@ -115,6 +125,7 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
 
         [target copyToSelector:@selector(__initWithItems:) fromSelector:@selector(initWithItems:)];
         [target copyToSelector:@selector(__initWithFrame:) fromSelector:@selector(initWithFrame:)];
+        [target copyToSelector:@selector(__initWithCoder:) fromSelector:@selector(initWithCoder:)];
         [target copyToSelector:@selector(__awakeFromNib) fromSelector:@selector(awakeFromNib)];
         [target copyToSelector:@selector(__tintColor) fromSelector:@selector(tintColor)];
         [target copyToSelector:@selector(__setTintColor:) fromSelector:@selector(setTintColor:)];
@@ -127,6 +138,7 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
 
     [self exportSelector:@selector(initWithItems:) toClass:target];
     [self exportSelector:@selector(initWithFrame:) toClass:target];
+    [self exportSelector:@selector(initWithCoder:) toClass:target];
     [self exportSelector:@selector(awakeFromNib) toClass:target];
     [self exportSelector:@selector(setFrame:) toClass:target];
     if (![UIDevice currentDevice].iOS7) {
@@ -156,9 +168,21 @@ CGFloat UI7SegmentedControlHeight = 29.0f;
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [self __initWithCoder:aDecoder];
+    if (self != nil) {
+        [self _segmentedControlInit];
+    }
+    return self;
+}
+
 - (void)setFrame:(CGRect)frame {
+    // keep the minimal size
     if (frame.size.height <= 1.0f) {
         frame.size.height = UI7SegmentedControlHeight;
+    }
+    if (frame.size.width <= 1.0f) {
+        frame.size.width = 1.0f + UI7SegmentedControlCellWidthDefault * self.numberOfSegments;
     }
     [self __setFrame:frame];
 }

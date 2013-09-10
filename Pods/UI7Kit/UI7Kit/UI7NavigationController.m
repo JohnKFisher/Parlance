@@ -1,6 +1,6 @@
 //
 //  UI7NavigationController.m
-//  FoundationExtension
+//  UI7Kit
 //
 //  Created by Jeong YunWon on 13. 6. 11..
 //  Copyright (c) 2013 youknowone.org. All rights reserved.
@@ -72,10 +72,10 @@ NSAPropertyAssignSetter(setNavigationBarClass, @"_navigationBarClass");
 
     Class MFMailComposeViewController = NSClassFromString(@"MFMailComposeViewController");
     if (MFMailComposeViewController) {
-        [MFMailComposeViewController addMethodForSelector:@selector(__init) fromMethod:[MFMailComposeViewController methodForSelector:@selector(init)]];
-        NSAMethod *method = [self methodForSelector:@selector(_MFMailComposeViewController_init)];
+        [MFMailComposeViewController addMethodForSelector:@selector(__init) fromMethod:[MFMailComposeViewController methodObjectForSelector:@selector(init)]];
+        NSAMethod *method = [self methodObjectForSelector:@selector(_MFMailComposeViewController_init)];
         [MFMailComposeViewController addMethodForSelector:@selector(init) fromMethod:method];
-        [MFMailComposeViewController methodForSelector:@selector(init)].implementation = method.implementation;
+        [MFMailComposeViewController methodObjectForSelector:@selector(init)].implementation = method.implementation;
     }
 }
 

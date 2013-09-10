@@ -32,6 +32,10 @@
     return [UIColor colorWith8bitWhite:90 alpha:250];
 }
 
++ (UIColor *)blackTabBarColor {
+    return [UIColor colorWith8bitWhite:15 alpha:240];
+}
+
 + (UIColor *)defaultBackgroundColor {
     return [UIColor colorWith8bitWhite:248 alpha:255];
 }
@@ -49,6 +53,10 @@
 }
 
 + (UIColor *)groupedTableViewSectionBackgroundColor {
+    return [UIColor colorWith8bitRed:239 green:239 blue:244 alpha:255];
+}
+
++ (UIColor *)groupTableViewBackgroundColor {
     return [UIColor colorWith8bitRed:239 green:239 blue:244 alpha:255];
 }
 

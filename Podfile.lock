@@ -1,19 +1,19 @@
 PODS:
   - cdebug (0.1.1)
-  - FoundationExtension (0.39.1):
+  - FoundationExtension (0.41.3):
     - cdebug (~> 0.1)
     - FoundationExtension/CocoaExtension
     - FoundationExtension/FoundationExtension
     - FoundationExtension/UIKitExtension
-  - FoundationExtension/FoundationExtension (0.39.1):
+  - FoundationExtension/FoundationExtension (0.41.3):
     - cdebug (~> 0.1)
-  - FoundationExtension/UIKitExtension (0.39.1):
+  - FoundationExtension/UIKitExtension (0.41.3):
     - cdebug (~> 0.1)
     - FoundationExtension/FoundationExtension
   - SevenSwitch (1.3.0)
-  - UI7Kit (0.8.10):
+  - UI7Kit (0.8.22):
     - UI7Kit/All
-  - UI7Kit/All (0.8.10):
+  - UI7Kit/All (0.8.22):
     - UI7Kit/UI7ActionSheet
     - UI7Kit/UI7AlertView
     - UI7Kit/UI7BarButtonItem
@@ -39,96 +39,96 @@ PODS:
     - UI7Kit/UI7View
     - UI7Kit/UI7ViewController
     - UI7Kit/UI7Window
-  - UI7Kit/Core (0.8.10):
+  - UI7Kit/Core (0.8.22):
     - cdebug
-    - FoundationExtension (~> 0.39)
+    - FoundationExtension (~> 0.40)
     - UI7Kit/UI7Color
-  - UI7Kit/UI7ActionSheet (0.8.10):
+  - UI7Kit/UI7ActionSheet (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
-  - UI7Kit/UI7AlertView (0.8.10):
+  - UI7Kit/UI7AlertView (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Button
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
-  - UI7Kit/UI7BarButtonItem (0.8.10):
+  - UI7Kit/UI7BarButtonItem (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Font
-  - UI7Kit/UI7Button (0.8.10):
+  - UI7Kit/UI7Button (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7BarButtonItem
     - UI7Kit/UI7Font
     - UI7Kit/UI7View
-  - UI7Kit/UI7Color (0.8.10)
-  - UI7Kit/UI7Font (0.8.10):
+  - UI7Kit/UI7Color (0.8.22)
+  - UI7Kit/UI7Font (0.8.22):
     - UI7Kit/Core
-  - UI7Kit/UI7NavigationBar (0.8.10):
+  - UI7Kit/UI7NavigationBar (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7BarButtonItem
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
-  - UI7Kit/UI7NavigationController (0.8.10):
+  - UI7Kit/UI7NavigationController (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7NavigationBar
     - UI7Kit/UI7Toolbar
-  - UI7Kit/UI7PickerView (0.8.10):
+  - UI7Kit/UI7PickerView (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Font
     - UI7Kit/UI7TableView
     - UI7Kit/UI7TableViewCell
     - UI7Kit/UI7View
-  - UI7Kit/UI7ProgressView (0.8.10):
+  - UI7Kit/UI7ProgressView (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7View
-  - UI7Kit/UI7SearchBar (0.8.10):
+  - UI7Kit/UI7SearchBar (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
-  - UI7Kit/UI7SegmentedControl (0.8.10):
+  - UI7Kit/UI7SegmentedControl (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Font
     - UI7Kit/UI7View
-  - UI7Kit/UI7Slider (0.8.10):
+  - UI7Kit/UI7Slider (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7View
-  - UI7Kit/UI7Stepper (0.8.10):
+  - UI7Kit/UI7Stepper (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7View
-  - UI7Kit/UI7Switch/SevenSwitch (0.8.10):
+  - UI7Kit/UI7Switch/SevenSwitch (0.8.22):
     - SevenSwitch (~> 1.3.0)
     - UI7Kit/Core
-  - UI7Kit/UI7TabBar (0.8.10):
+  - UI7Kit/UI7TabBar (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
     - UI7Kit/UI7View
-  - UI7Kit/UI7TabBarController (0.8.10):
+  - UI7Kit/UI7TabBarController (0.8.22):
     - UI7Kit/Core
-  - UI7Kit/UI7TabBarItem (0.8.10):
+  - UI7Kit/UI7TabBarItem (0.8.22):
     - UI7Kit/Core
-  - UI7Kit/UI7TableView (0.8.10):
+  - UI7Kit/UI7TableView (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
-  - UI7Kit/UI7TableViewCell (0.8.10):
+  - UI7Kit/UI7TableViewCell (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
     - UI7Kit/UI7Font
     - UI7Kit/UI7View
-  - UI7Kit/UI7TextField (0.8.10):
+  - UI7Kit/UI7TextField (0.8.22):
     - UI7Kit/Core
-  - UI7Kit/UI7Toolbar (0.8.10):
+  - UI7Kit/UI7Toolbar (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7Color
-  - UI7Kit/UI7View (0.8.10):
+  - UI7Kit/UI7View (0.8.22):
     - UI7Kit/Core
-  - UI7Kit/UI7ViewController (0.8.10):
+  - UI7Kit/UI7ViewController (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7BarButtonItem
     - UI7Kit/UI7NavigationBar
-  - UI7Kit/UI7Window (0.8.10):
+  - UI7Kit/UI7Window (0.8.22):
     - UI7Kit/Core
     - UI7Kit/UI7View
 
@@ -137,8 +137,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
-  FoundationExtension: fdd92e10521774428b2280c715c059e7ad6710c8
+  FoundationExtension: ec33240f8dc2d85601da5d278a762da4a17cead7
   SevenSwitch: f1ae106a4fcb459829ba5a6a3265e7e9f873f80c
-  UI7Kit: 06ddc3611cdfb3adb8ab73bdb08d365fe2b9ded3
+  UI7Kit: 6015773836cd3b1d15fdcbb3943fa0361ecb31ea
 
-COCOAPODS: 0.23.0
+COCOAPODS: 0.24.0

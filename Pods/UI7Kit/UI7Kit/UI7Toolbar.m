@@ -1,6 +1,6 @@
 //
 //  UI7Toolbar.m
-//  FoundationExtension
+//  UI7Kit
 //
 //  Created by Jeong YunWon on 13. 6. 11..
 //  Copyright (c) 2013 youknowone.org. All rights reserved.
@@ -19,6 +19,9 @@
 
 - (void)_toolbarInit {
     [self setBarStyle:self.barStyle];
+    
+    if ([self respondsToSelector:@selector(setShadowImage:forToolbarPosition:)])
+        [self setShadowImage:[[UIImage alloc] init] forToolbarPosition:UIToolbarPositionAny];
 
     UIGraphicsBeginImageContext(CGSizeMake(1.0, 3.0));
     CGContextRef context = UIGraphicsGetCurrentContext();

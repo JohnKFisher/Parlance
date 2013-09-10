@@ -10,7 +10,7 @@
 
 @implementation NSObject (NSValue)
 
-- (NSValue *)value {
+- (NSValue *)valueForObject {
     return [NSValue valueWithNonretainedObject:self];
 }
 
