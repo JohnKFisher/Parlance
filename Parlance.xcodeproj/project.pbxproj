@@ -41,6 +41,35 @@
 		FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC80C2817B5C513000D6764 /* libz.dylib */; };
 		FEEEDB9017C00D8C00B4A026 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */; };
 		FEF0B88C1798BB3E00D29212 /* Dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF0B88B1798BB3400D29212 /* Dictionary.plist */; };
+		FEFDB82117E0F11B007295CF /* Burstly_SKYROCKET_FULL.txt in Resources */ = {isa = PBXBuildFile; fileRef = FEFDB81517E0F11B007295CF /* Burstly_SKYROCKET_FULL.txt */; };
+		FEFDB82217E0F11B007295CF /* libBurstly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82017E0F11B007295CF /* libBurstly.a */; };
+		FEFDB83E17E0F463007295CF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82317E0F463007295CF /* Accounts.framework */; };
+		FEFDB83F17E0F463007295CF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82417E0F463007295CF /* AddressBook.framework */; };
+		FEFDB84017E0F463007295CF /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82517E0F463007295CF /* AddressBookUI.framework */; };
+		FEFDB84117E0F463007295CF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82617E0F463007295CF /* AdSupport.framework */; };
+		FEFDB84217E0F463007295CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82717E0F463007295CF /* AudioToolbox.framework */; };
+		FEFDB84317E0F463007295CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82817E0F463007295CF /* AVFoundation.framework */; };
+		FEFDB84417E0F463007295CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82917E0F463007295CF /* CFNetwork.framework */; };
+		FEFDB84517E0F463007295CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82A17E0F463007295CF /* CoreLocation.framework */; };
+		FEFDB84617E0F463007295CF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82B17E0F463007295CF /* CoreMotion.framework */; };
+		FEFDB84717E0F463007295CF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82C17E0F463007295CF /* CoreTelephony.framework */; };
+		FEFDB84817E0F463007295CF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82D17E0F463007295CF /* EventKit.framework */; };
+		FEFDB84917E0F463007295CF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82E17E0F463007295CF /* EventKitUI.framework */; };
+		FEFDB84A17E0F463007295CF /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB82F17E0F463007295CF /* iAd.framework */; };
+		FEFDB84B17E0F463007295CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83017E0F463007295CF /* libsqlite3.dylib */; };
+		FEFDB84C17E0F463007295CF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83117E0F463007295CF /* libxml2.dylib */; };
+		FEFDB84D17E0F463007295CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83217E0F463007295CF /* MapKit.framework */; };
+		FEFDB84E17E0F463007295CF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83317E0F463007295CF /* MediaPlayer.framework */; };
+		FEFDB84F17E0F463007295CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83417E0F463007295CF /* MessageUI.framework */; };
+		FEFDB85017E0F463007295CF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83517E0F463007295CF /* MobileCoreServices.framework */; };
+		FEFDB85117E0F463007295CF /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83617E0F463007295CF /* OpenAL.framework */; };
+		FEFDB85217E0F463007295CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83717E0F463007295CF /* OpenGLES.framework */; };
+		FEFDB85317E0F463007295CF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83817E0F463007295CF /* PassKit.framework */; };
+		FEFDB85417E0F463007295CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83917E0F463007295CF /* QuartzCore.framework */; };
+		FEFDB85517E0F463007295CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83A17E0F463007295CF /* Security.framework */; };
+		FEFDB85617E0F463007295CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83B17E0F463007295CF /* StoreKit.framework */; };
+		FEFDB85717E0F463007295CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83C17E0F463007295CF /* SystemConfiguration.framework */; };
+		FEFDB85817E0F463007295CF /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDB83D17E0F463007295CF /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +126,57 @@
 		FEEEDB8E17C00D8C00B4A026 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = Words/TestViewController.h; sourceTree = "<group>"; };
 		FEEEDB8F17C00D8C00B4A026 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = Words/TestViewController.m; sourceTree = "<group>"; };
 		FEF0B88B1798BB3400D29212 /* Dictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Dictionary.plist; sourceTree = "<group>"; };
+		FEFDB80617E0F11B007295CF /* OAIAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAIAdManager.h; sourceTree = "<group>"; };
+		FEFDB80717E0F11B007295CF /* OAIAdManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAIAdManagerDelegate.h; sourceTree = "<group>"; };
+		FEFDB80917E0F11B007295CF /* BurstlyAdBannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdBannerDelegate.h; sourceTree = "<group>"; };
+		FEFDB80A17E0F11B007295CF /* BurstlyAdBannerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdBannerProtocol.h; sourceTree = "<group>"; };
+		FEFDB80B17E0F11B007295CF /* BurstlyAdInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdInterstitialDelegate.h; sourceTree = "<group>"; };
+		FEFDB80C17E0F11B007295CF /* BurstlyAdInterstitialProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdInterstitialProtocol.h; sourceTree = "<group>"; };
+		FEFDB80D17E0F11B007295CF /* BurstlyAdNetworkAdaptorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdNetworkAdaptorProtocol.h; sourceTree = "<group>"; };
+		FEFDB80F17E0F11B007295CF /* BurstlyCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyCurrency.h; sourceTree = "<group>"; };
+		FEFDB81017E0F11B007295CF /* BurstlyCurrencyUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyCurrencyUpdateInfo.h; sourceTree = "<group>"; };
+		FEFDB81217E0F11B007295CF /* BurstlyDownloadTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyDownloadTracker.h; sourceTree = "<group>"; };
+		FEFDB81317E0F11B007295CF /* BurstlyInstalledAppsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyInstalledAppsTracker.h; sourceTree = "<group>"; };
+		FEFDB81417E0F11B007295CF /* BurstlyInstalledAppsTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyInstalledAppsTrackerDelegate.h; sourceTree = "<group>"; };
+		FEFDB81517E0F11B007295CF /* Burstly_SKYROCKET_FULL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Burstly_SKYROCKET_FULL.txt; sourceTree = "<group>"; };
+		FEFDB81617E0F11B007295CF /* BurstlyAdPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdPlacement.h; sourceTree = "<group>"; };
+		FEFDB81717E0F11B007295CF /* BurstlyAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdRequest.h; sourceTree = "<group>"; };
+		FEFDB81817E0F11B007295CF /* BurstlyAdUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAdUtils.h; sourceTree = "<group>"; };
+		FEFDB81917E0F11B007295CF /* BurstlyAnchor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyAnchor.h; sourceTree = "<group>"; };
+		FEFDB81A17E0F11B007295CF /* BurstlyBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyBanner.h; sourceTree = "<group>"; };
+		FEFDB81B17E0F11B007295CF /* BurstlyInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyInterstitial.h; sourceTree = "<group>"; };
+		FEFDB81C17E0F11B007295CF /* BurstlyInterstitialCloseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyInterstitialCloseDelegate.h; sourceTree = "<group>"; };
+		FEFDB81D17E0F11B007295CF /* BurstlyInterstitialDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyInterstitialDecorator.h; sourceTree = "<group>"; };
+		FEFDB81E17E0F11B007295CF /* BurstlyLoggerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyLoggerConstants.h; sourceTree = "<group>"; };
+		FEFDB81F17E0F11B007295CF /* BurstlyUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurstlyUserInfo.h; sourceTree = "<group>"; };
+		FEFDB82017E0F11B007295CF /* libBurstly.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBurstly.a; sourceTree = "<group>"; };
+		FEFDB82317E0F463007295CF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FEFDB82417E0F463007295CF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FEFDB82517E0F463007295CF /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		FEFDB82617E0F463007295CF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FEFDB82717E0F463007295CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FEFDB82817E0F463007295CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FEFDB82917E0F463007295CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FEFDB82A17E0F463007295CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FEFDB82B17E0F463007295CF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FEFDB82C17E0F463007295CF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FEFDB82D17E0F463007295CF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		FEFDB82E17E0F463007295CF /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		FEFDB82F17E0F463007295CF /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		FEFDB83017E0F463007295CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		FEFDB83117E0F463007295CF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		FEFDB83217E0F463007295CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FEFDB83317E0F463007295CF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FEFDB83417E0F463007295CF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FEFDB83517E0F463007295CF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FEFDB83617E0F463007295CF /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		FEFDB83717E0F463007295CF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FEFDB83817E0F463007295CF /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		FEFDB83917E0F463007295CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FEFDB83A17E0F463007295CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FEFDB83B17E0F463007295CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FEFDB83C17E0F463007295CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FEFDB83D17E0F463007295CF /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +184,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */,
+				FEFDB83E17E0F463007295CF /* Accounts.framework in Frameworks */,
+				FEFDB83F17E0F463007295CF /* AddressBook.framework in Frameworks */,
+				FEFDB84017E0F463007295CF /* AddressBookUI.framework in Frameworks */,
+				FEFDB84117E0F463007295CF /* AdSupport.framework in Frameworks */,
+				FEFDB84217E0F463007295CF /* AudioToolbox.framework in Frameworks */,
+				FEFDB84317E0F463007295CF /* AVFoundation.framework in Frameworks */,
+				FEFDB84417E0F463007295CF /* CFNetwork.framework in Frameworks */,
+				FEFDB84517E0F463007295CF /* CoreLocation.framework in Frameworks */,
+				FEFDB84617E0F463007295CF /* CoreMotion.framework in Frameworks */,
+				FEFDB84717E0F463007295CF /* CoreTelephony.framework in Frameworks */,
+				FEFDB84817E0F463007295CF /* EventKit.framework in Frameworks */,
+				FEFDB84917E0F463007295CF /* EventKitUI.framework in Frameworks */,
+				FEFDB84A17E0F463007295CF /* iAd.framework in Frameworks */,
+				FEFDB84B17E0F463007295CF /* libsqlite3.dylib in Frameworks */,
+				FEFDB84C17E0F463007295CF /* libxml2.dylib in Frameworks */,
+				FEFDB84D17E0F463007295CF /* MapKit.framework in Frameworks */,
+				FEFDB84E17E0F463007295CF /* MediaPlayer.framework in Frameworks */,
+				FEFDB84F17E0F463007295CF /* MessageUI.framework in Frameworks */,
+				FEFDB85017E0F463007295CF /* MobileCoreServices.framework in Frameworks */,
+				FEFDB85117E0F463007295CF /* OpenAL.framework in Frameworks */,
+				FEFDB85217E0F463007295CF /* OpenGLES.framework in Frameworks */,
+				FEFDB85317E0F463007295CF /* PassKit.framework in Frameworks */,
+				FEFDB85417E0F463007295CF /* QuartzCore.framework in Frameworks */,
+				FEFDB85517E0F463007295CF /* Security.framework in Frameworks */,
+				FEFDB85617E0F463007295CF /* StoreKit.framework in Frameworks */,
+				FEFDB85717E0F463007295CF /* SystemConfiguration.framework in Frameworks */,
+				FEFDB85817E0F463007295CF /* Twitter.framework in Frameworks */,
 				FEC65F951794E0BB0072E836 /* CoreGraphics.framework in Frameworks */,
-				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
 				FEC65F931794E0BB0072E836 /* Foundation.framework in Frameworks */,
+				FEC80C3A17B5D172000D6764 /* libz.dylib in Frameworks */,
+				FEC65F971794E0BB0072E836 /* UIKit.framework in Frameworks */,
 				FB8B012CB0DA4FB0B4EF93F9 /* libPods.a in Frameworks */,
 				FE7639E817B9D99F0071DC0A /* Crashlytics.framework in Frameworks */,
 				FE985C6217C04FAA000D48FB /* libTestFlight.a in Frameworks */,
+				FEFDB82217E0F11B007295CF /* libBurstly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +293,34 @@
 		FEC65F911794E0BB0072E836 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEFDB82317E0F463007295CF /* Accounts.framework */,
+				FEFDB82417E0F463007295CF /* AddressBook.framework */,
+				FEFDB82517E0F463007295CF /* AddressBookUI.framework */,
+				FEFDB82617E0F463007295CF /* AdSupport.framework */,
+				FEFDB82717E0F463007295CF /* AudioToolbox.framework */,
+				FEFDB82817E0F463007295CF /* AVFoundation.framework */,
+				FEFDB82917E0F463007295CF /* CFNetwork.framework */,
+				FEFDB82A17E0F463007295CF /* CoreLocation.framework */,
+				FEFDB82B17E0F463007295CF /* CoreMotion.framework */,
+				FEFDB82C17E0F463007295CF /* CoreTelephony.framework */,
+				FEFDB82D17E0F463007295CF /* EventKit.framework */,
+				FEFDB82E17E0F463007295CF /* EventKitUI.framework */,
+				FEFDB82F17E0F463007295CF /* iAd.framework */,
+				FEFDB83017E0F463007295CF /* libsqlite3.dylib */,
+				FEFDB83117E0F463007295CF /* libxml2.dylib */,
+				FEFDB83217E0F463007295CF /* MapKit.framework */,
+				FEFDB83317E0F463007295CF /* MediaPlayer.framework */,
+				FEFDB83417E0F463007295CF /* MessageUI.framework */,
+				FEFDB83517E0F463007295CF /* MobileCoreServices.framework */,
+				FEFDB83617E0F463007295CF /* OpenAL.framework */,
+				FEFDB83717E0F463007295CF /* OpenGLES.framework */,
+				FEFDB83817E0F463007295CF /* PassKit.framework */,
+				FEFDB83917E0F463007295CF /* QuartzCore.framework */,
+				FEFDB83A17E0F463007295CF /* Security.framework */,
+				FEFDB83B17E0F463007295CF /* StoreKit.framework */,
+				FEFDB83C17E0F463007295CF /* SystemConfiguration.framework */,
+				FEFDB83D17E0F463007295CF /* Twitter.framework */,
+				FEFDB80317E0F11B007295CF /* BurstlySDK */,
 				FE985C5B17C04F9F000D48FB /* TestFlightSDK2 */,
 				FE7639E717B9D99F0071DC0A /* Crashlytics.framework */,
 				FEC80C2817B5C513000D6764 /* libz.dylib */,
@@ -240,6 +376,77 @@
 				FEF0B88B1798BB3400D29212 /* Dictionary.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		FEFDB80317E0F11B007295CF /* BurstlySDK */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB80417E0F11B007295CF /* AddOns */,
+				FEFDB81517E0F11B007295CF /* Burstly_SKYROCKET_FULL.txt */,
+				FEFDB81617E0F11B007295CF /* BurstlyAdPlacement.h */,
+				FEFDB81717E0F11B007295CF /* BurstlyAdRequest.h */,
+				FEFDB81817E0F11B007295CF /* BurstlyAdUtils.h */,
+				FEFDB81917E0F11B007295CF /* BurstlyAnchor.h */,
+				FEFDB81A17E0F11B007295CF /* BurstlyBanner.h */,
+				FEFDB81B17E0F11B007295CF /* BurstlyInterstitial.h */,
+				FEFDB81C17E0F11B007295CF /* BurstlyInterstitialCloseDelegate.h */,
+				FEFDB81D17E0F11B007295CF /* BurstlyInterstitialDecorator.h */,
+				FEFDB81E17E0F11B007295CF /* BurstlyLoggerConstants.h */,
+				FEFDB81F17E0F11B007295CF /* BurstlyUserInfo.h */,
+				FEFDB82017E0F11B007295CF /* libBurstly.a */,
+			);
+			path = BurstlySDK;
+			sourceTree = "<group>";
+		};
+		FEFDB80417E0F11B007295CF /* AddOns */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB80517E0F11B007295CF /* Deprecated */,
+				FEFDB80817E0F11B007295CF /* PartnerIntegration */,
+				FEFDB80E17E0F11B007295CF /* Rewards */,
+				FEFDB81117E0F11B007295CF /* Tracking */,
+			);
+			path = AddOns;
+			sourceTree = "<group>";
+		};
+		FEFDB80517E0F11B007295CF /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB80617E0F11B007295CF /* OAIAdManager.h */,
+				FEFDB80717E0F11B007295CF /* OAIAdManagerDelegate.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		FEFDB80817E0F11B007295CF /* PartnerIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB80917E0F11B007295CF /* BurstlyAdBannerDelegate.h */,
+				FEFDB80A17E0F11B007295CF /* BurstlyAdBannerProtocol.h */,
+				FEFDB80B17E0F11B007295CF /* BurstlyAdInterstitialDelegate.h */,
+				FEFDB80C17E0F11B007295CF /* BurstlyAdInterstitialProtocol.h */,
+				FEFDB80D17E0F11B007295CF /* BurstlyAdNetworkAdaptorProtocol.h */,
+			);
+			path = PartnerIntegration;
+			sourceTree = "<group>";
+		};
+		FEFDB80E17E0F11B007295CF /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB80F17E0F11B007295CF /* BurstlyCurrency.h */,
+				FEFDB81017E0F11B007295CF /* BurstlyCurrencyUpdateInfo.h */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		FEFDB81117E0F11B007295CF /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				FEFDB81217E0F11B007295CF /* BurstlyDownloadTracker.h */,
+				FEFDB81317E0F11B007295CF /* BurstlyInstalledAppsTracker.h */,
+				FEFDB81417E0F11B007295CF /* BurstlyInstalledAppsTrackerDelegate.h */,
+			);
+			path = Tracking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +553,7 @@
 				FE7639EA17B9DB5A0071DC0A /* Default-568h@2x.png in Resources */,
 				FEC65F9D1794E0BB0072E836 /* InfoPlist.strings in Resources */,
 				FE985C5D17C04F9F000D48FB /* README.md in Resources */,
+				FEFDB82117E0F11B007295CF /* Burstly_SKYROCKET_FULL.txt in Resources */,
 				FEC65FA61794E0BB0072E836 /* Main.storyboard in Resources */,
 				FE985C5F17C04F9F000D48FB /* TestFlight+AsyncLogging.h in Resources */,
 			);
@@ -554,6 +762,22 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
+					"/Users/jkfisher/XCode\\ Projects/Parlance/BurstlySDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+					"-framework",
+					UIKit,
+					"-weak_framework",
+					Accounts,
+					"-weak_framework",
+					AdSupport,
+					"-weak_framework",
+					PassKit,
+					"-weak_framework",
+					Twitter,
 				);
 				PRODUCT_NAME = Parlance;
 				PROVISIONING_PROFILE = "";
@@ -579,6 +803,22 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
+					"/Users/jkfisher/XCode\\ Projects/Parlance/BurstlySDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+					"-framework",
+					UIKit,
+					"-weak_framework",
+					Accounts,
+					"-weak_framework",
+					AdSupport,
+					"-weak_framework",
+					PassKit,
+					"-weak_framework",
+					Twitter,
 				);
 				PRODUCT_NAME = Parlance;
 				PROVISIONING_PROFILE = "";
