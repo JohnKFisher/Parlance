@@ -753,7 +753,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Words/Parlance-Prefix.pch";
@@ -761,8 +761,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/BurstlySDK",
+					"$(PROJECT_DIR)/TestFlightSDK2",
+					"$(PROJECT_DIR)/BurstlySDK",
+					"$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -794,7 +795,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Words/Parlance-Prefix.pch";
@@ -802,8 +803,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/TestFlightSDK2",
-					"/Users/jkfisher/XCode\\ Projects/Parlance/BurstlySDK",
+					"$(PROJECT_DIR)/TestFlightSDK2",
+					"$(PROJECT_DIR)/BurstlySDK",
+					"$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

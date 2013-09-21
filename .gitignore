@@ -5,10 +5,9 @@ build
 *.mode1v3
 *~
 *~.nib
-*~.xib 
-.DS_Store 
-xcuserdata/
+*~.xib
 .DS_Store
+xcuserdata/
 .VolumeIcon.icns
 .fseventsd
 Icon^M^M
